@@ -3950,3 +3950,23 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+	.stack {
+		margin-top: 5em;
+		margin-left: 3em;
+	}
+	.stack img{
+		width: 100px;
+		height: 100px;
+	}
+
+	.image-dashcam img{
+		width:95%;
+		height:auto;
+	}
+
+	.resumepdf{
+		display: flex;
+        justify-content: center;
+        align-items: center;
+	}
