@@ -57,6 +57,11 @@ nav ul li a {
 
     width: 100%;
 }
+
+.header-sect a:hover {
+    color: #00a3cc;
+    transition: color 0.3s ease;
+}
 /* Header */
 header {
     max-width: 800px;
@@ -100,6 +105,7 @@ header p {
 #my-stack {
     margin-top: 100px;
     text-align: center;
+    
 }
 
 .stack-logo {
@@ -123,6 +129,7 @@ header p {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 10px;
+    font-family: "Roboto Mono", monospace;
 }
 
 .stack-column {
@@ -136,8 +143,8 @@ header p {
 }
 
 .stack-column h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
     color: #333;
 }
 
@@ -295,13 +302,7 @@ header p {
     color: #ffffff;
   }
   
-  a {
-    
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  a:hover {
+  .footer-bottom a:hover {
     color: #ffffff;
   }
   
