@@ -122,9 +122,47 @@ header p {
     margin-top: 10px;
 }
 
+/* About Section */
+#about {
+    margin-top: clamp(80px, 12vw, 170px);
+    padding: clamp(20px, 4vw, 40px);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about h2 {
+    text-align: left;
+    margin-left: clamp(20px, 6vw, 70px);
+    font-size: clamp(2.5rem, 7vw, 4rem);
+    margin-bottom: clamp(25px, 4vw, 40px);
+    color: #243342;
+}
+
+.about-content {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: clamp(8px, 1.5vw, 12px);
+    padding: clamp(25px, 4vw, 40px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin: 0 clamp(10px, 2vw, 20px);
+}
+
+.about-content p {
+    font-family: "LilGrotesk-Regular";
+    font-size: clamp(1rem, 1.3vw, 1.125rem);
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: clamp(15px, 2vw, 20px);
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
 /* My Stack Section */
 #my-stack {
-    margin-top: clamp(50px, 10vw, 100px);
+    margin-top: clamp(80px, 12vw, 140px);
     text-align: center;
     
 }
@@ -180,15 +218,100 @@ header p {
     margin: clamp(3px, 0.5vw, 5px) 0;
 }
 
+/* Experience Section */
+#experience {
+    margin-top: clamp(80px, 12vw, 140px);
+    padding: clamp(20px, 4vw, 40px);
+}
+
+#experience h2 {
+    text-align: right;
+    margin-left: clamp(20px, 6vw, 70px);
+    font-size: clamp(2.5rem, 7vw, 4rem);
+    margin-bottom: clamp(30px, 5vw, 50px);
+    color: #243342;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(25px, 4vw, 35px);
+}
+
+.experience-card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: clamp(8px, 1.5vw, 12px);
+    padding: clamp(20px, 3vw, 30px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: clamp(15px, 2vw, 20px);
+    flex-wrap: wrap;
+    gap: clamp(10px, 1.5vw, 15px);
+}
+
+.company-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: bold;
+    margin-bottom: clamp(5px, 0.8vw, 8px);
+    color: #1a202c;
+}
+
+.job-title {
+    font-family: "LilGrotesk-Regular";
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    color: #555;
+    font-weight: normal;
+}
+
+.experience-dates {
+    font-family: "Roboto Mono", monospace;
+    font-size: clamp(0.875rem, 1.2vw, 1rem);
+    color: #666;
+    background-color: #f0f0f0;
+    padding: clamp(4px, 0.8vw, 6px) clamp(10px, 1.5vw, 12px);
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.experience-bullets {
+    font-family: "LilGrotesk-Regular";
+    list-style-position: outside;
+    padding-left: clamp(20px, 3vw, 25px);
+    margin: 0;
+}
+
+.experience-bullets li {
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: clamp(8px, 1vw, 10px);
+}
+
+.experience-bullets li:last-child {
+    margin-bottom: 0;
+}
+
 .projects-section {
     padding: clamp(20px, 4vw, 40px);
-    margin-top: clamp(30px, 5vw, 50px);
+    margin-top: clamp(80px, 12vw, 140px);
     
   }
   
   .section-title {
     font-size: clamp(2.5rem, 7vw, 4rem);
-    text-align: right;
+    text-align: left;
     font-weight: bold;
     margin-bottom: clamp(25px, 4vw, 40px);
     margin-right: clamp(10px, 2vw, 20px);
@@ -359,6 +482,15 @@ header p {
 
     .project-images {
       width: 100%;
+    }
+
+    .experience-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .experience-dates {
+      align-self: flex-start;
     }
 
     header h2 {
