@@ -1,0 +1,221 @@
+.educationSection {
+  margin-top: clamp(80px, 12vw, 140px);
+  padding: clamp(20px, 4vw, 40px);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  text-align: right;
+  margin-right: clamp(20px, 6vw, 70px);
+  font-size: clamp(2.5rem, 7vw, 4rem);
+  margin-bottom: clamp(30px, 5vw, 50px);
+  color: var(--primary-color);
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), var(--teal-color));
+  border-radius: 2px;
+}
+
+.educationContainer {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(30px, 5vw, 40px);
+}
+
+.educationCard {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.98) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-left: 5px solid var(--accent-color);
+  border-radius: clamp(12px, 2vw, 16px);
+  padding: clamp(25px, 4vw, 40px);
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    0 2px 10px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+}
+
+.educationCard::before {
+  content: '🎓';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 150px;
+  opacity: 0.05;
+  transform: rotate(-15deg);
+}
+
+.educationCard:hover {
+  border-left-width: 8px;
+}
+
+.educationHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: clamp(20px, 3vw, 30px);
+  flex-wrap: wrap;
+  gap: clamp(15px, 2vw, 20px);
+}
+
+.schoolInfo {
+  flex: 1;
+  min-width: 250px;
+}
+
+.schoolName {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-weight: bold;
+  margin-bottom: clamp(8px, 1vw, 12px);
+  color: var(--primary-color);
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.degree {
+  font-family: "LilGrotesk-Regular";
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  color: var(--text-light);
+  font-weight: normal;
+  margin-bottom: clamp(8px, 1vw, 10px);
+  line-height: 1.4;
+}
+
+.location {
+  font-family: "Roboto Mono", monospace;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  color: var(--text-lighter);
+  font-style: italic;
+}
+
+.eduMeta {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(8px, 1vw, 12px);
+  align-items: flex-end;
+}
+
+.dates {
+  font-family: "Roboto Mono", monospace;
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  color: var(--text-lighter);
+  background-color: var(--bg-light);
+  padding: clamp(6px, 1vw, 8px) clamp(12px, 2vw, 16px);
+  border-radius: 6px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.gpa {
+  font-family: "Roboto Mono", monospace;
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  color: white;
+  background: linear-gradient(135deg, var(--green), #4caf50);
+  padding: clamp(6px, 1vw, 8px) clamp(12px, 2vw, 16px);
+  border-radius: 6px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(102, 204, 51, 0.3);
+}
+
+.highlights {
+  margin-bottom: clamp(20px, 3vw, 25px);
+  padding: clamp(15px, 2vw, 20px);
+  background: linear-gradient(135deg, rgba(255, 157, 0, 0.05), rgba(255, 157, 0, 0.02));
+  border-radius: 8px;
+  border-left: 3px solid var(--orange);
+}
+
+.highlights h5 {
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  color: var(--primary-color);
+  margin-bottom: clamp(10px, 1.5vw, 15px);
+  font-weight: 600;
+}
+
+.highlights ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.highlights li {
+  font-family: "LilGrotesk-Regular";
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  color: var(--text-light);
+  margin-bottom: clamp(8px, 1vw, 10px);
+  padding-left: clamp(5px, 1vw, 8px);
+  line-height: 1.6;
+}
+
+.highlights li:last-child {
+  margin-bottom: 0;
+}
+
+.courses {
+  padding-top: clamp(15px, 2vw, 20px);
+  border-top: 1px solid var(--border-color);
+}
+
+.courses h5 {
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  color: var(--primary-color);
+  margin-bottom: clamp(12px, 2vw, 18px);
+  font-weight: 600;
+}
+
+.courseGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(8px, 1vw, 12px);
+}
+
+.courseTag {
+  font-family: "Roboto Mono", monospace;
+  background: linear-gradient(135deg, var(--teal-color), #5a9eb0);
+  color: white;
+  padding: clamp(6px, 1vw, 8px) clamp(12px, 2vw, 16px);
+  border-radius: 20px;
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(120, 178, 192, 0.3);
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.courseTag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(120, 178, 192, 0.4);
+  background: linear-gradient(135deg, #5a9eb0, var(--teal-color));
+}
+
+@media (max-width: 768px) {
+  .educationHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .eduMeta {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .courseGrid {
+    gap: clamp(6px, 1vw, 8px);
+  }
+}

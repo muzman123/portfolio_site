@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(20px, 4vw, 40px) clamp(20px, 4vw, 40px);
+  font-family: "Roboto Mono", monospace;
+  font-style: italic;
+}
+
+.navList {
+  display: flex;
+  gap: clamp(30px, 5vw, 60px);
+  flex-wrap: wrap;
+}
+
+.navList li a {
+  font-size: clamp(0.875rem, 1vw, 1rem);
+  font-weight: bold;
+  color: var(--text-color);
+  position: relative;
+  transition: color 0.3s ease;
+  padding-bottom: 2px;
+}
+
+.navList li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-color), var(--teal-color));
+  transition: width 0.3s ease;
+}
+
+.navList li a:hover {
+  color: var(--accent-color);
+}
+
+.navList li a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navList {
+    gap: clamp(20px, 4vw, 30px);
+  }
+}

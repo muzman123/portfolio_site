@@ -1,0 +1,16 @@
+.app {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), var(--teal-color), var(--green));
+  transform-origin: 0%;
+  z-index: 9999;
+  box-shadow: 0 2px 10px rgba(255, 61, 0, 0.3);
+}

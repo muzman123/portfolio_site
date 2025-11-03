@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@font-face {
+  font-family: 'LilGrotesk';
+  src: url('/fonts/LilGrotesk-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'LilGrotesk-Regular';
+  src: url('/fonts/LilGrotesk-Regular.otf') format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #243342;
+  --accent-color: #FF3D00;
+  --teal-color: #78b2c0;
+  --light-green: #e2f0cb;
+  --orange: #ff9900;
+  --green: #66cc33;
+  --yellow: #ffcc00;
+  --text-color: #333;
+  --text-light: #555;
+  --text-lighter: #666;
+  --bg-white: #ffffff;
+  --border-color: #e0e0e0;
+  --bg-light: #f0f0f0;
+}
+
+body {
+  font-family: 'LilGrotesk', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  overflow-x: hidden;
+  background: var(--bg-white);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
