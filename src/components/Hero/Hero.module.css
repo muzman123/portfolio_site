@@ -54,7 +54,7 @@
 }
 
 .heroContent {
-  max-width: 800px;
+  max-width: 1200px;
 }
 
 .greeting {
@@ -73,7 +73,7 @@
 }
 
 .name {
-  font-size: clamp(2.5rem, 8vw, 4.8rem);
+  font-size: clamp(2.5rem, 8vw, 8.0rem);
   font-weight: bold;
   color: var(--primary-color);
   background: linear-gradient(135deg, var(--primary-color), var(--teal-color));
