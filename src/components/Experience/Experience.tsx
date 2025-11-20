@@ -19,7 +19,7 @@ const experienceData = [
     title: 'Founding Engineer',
     dates: 'July 2025 - Present',
     bullets: [
-      'Designed end-to-end Django-based document processing and analysis platform with intelligent multi-layered architecture',
+      'Designed end-to-end FastAPI based intelligence platform for teams and individuals with agentic architecture',
       'Architected parallel research orchestration system conducting multiple simultaneous API queries',
       'Implemented comprehensive relational database schema with proper foreign key relationships',
     ],

@@ -39,7 +39,7 @@ const Hero = () => {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="https://medium.com/@muzammilmuhammad12" target="_blank" rel="noopener noreferrer">Blog</a>
+            <a href="https://muzman123.github.io/blog/" target="_blank" rel="noopener noreferrer">Blog</a>
           </li>
           <li>
             <a href="/resume.html" target="_blank" rel="noopener noreferrer">Resume</a>
