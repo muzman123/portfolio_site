@@ -5,24 +5,21 @@ import styles from './Stack.module.css'
 
 const stackData = {
   technologies: [
+    { name: 'Python', logo: '/logos/python.png' },
     { name: 'JavaScript', logo: '/logos/javascript.png' },
     { name: 'TypeScript', logo: '/logos/typescript.png' },
-    { name: 'HTML', logo: '/logos/html.png' },
-    { name: 'CSS', logo: '/logos/css.png' },
-    { name: 'Node.js', logo: '/logos/nodejs.png' },
     { name: 'C++', logo: '/logos/cpp.png' },
     { name: 'Java', logo: '/logos/java.png' },
-    { name: 'Python', logo: '/logos/python.png' },
     { name: 'C#', logo: '/logos/csharp.png' },
     { name: 'SQL', logo: '/logos/sql.png' },
   ],
   frameworks: [
+    { name: 'PyTorch', logo: '/logos/pytorch.svg' },
     { name: 'React', logo: '/logos/react.png' },
-    { name: 'Vue.js', logo: '/logos/vuejs.png' },
     { name: 'Next.js', logo: '/logos/nextjs.png' },
     { name: 'Tailwind CSS', logo: '/logos/tailwind.png' },
-    { name: 'TensorFlow', logo: '/logos/tensorflow.png' },
-    { name: 'Flutter', logo: '/logos/flutter.png' },
+    { name: 'Node.js', logo: '/logos/nodejs.png' },
+
   ],
   tools: [
     { name: 'Git', logo: '/logos/git.png' },

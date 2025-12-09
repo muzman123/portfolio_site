@@ -10,13 +10,13 @@ const experienceData = [
     dates: 'May 2025 - Present',
     bullets: [
       'Modernized plant HMI (Human-Machine Interface) screens using HTML and VB scripting to improve operational efficiency and user experience for process control operators',
-      'Developed automation solution for tag and point data management for over 13 sites in Lloyd, Cogent DataHub middleware, and corporate databases/PSI systems, eliminating manual import/export processes and saving 100s of hours of labor and around $100k over multi-year projections',
+      'Developed automation solution for tag and point data management for over 13 sites in Lloyd, Cogent DataHub middleware, and corporate databases/PSI systems, eliminating manual import/export processes and saving 100s of hours of labor and around $40k over multi-year projections',
       'Enhanced legacy industrial control systems by redesigning interface workflows and implementing automated data pipelines to streamline plant-to-corporate information transfer',
     ],
   },
   {
     company: 'Thinkera',
-    title: 'Founding Engineer',
+    title: 'Full-Stack Engineer',
     dates: 'July 2025 - Present',
     bullets: [
       'Designed end-to-end FastAPI based intelligence platform for teams and individuals with agentic architecture',
