@@ -1,3 +1,0 @@
-Portfolio site approval-free test!
-No manual approvals needed for this repo either.
-Config working across both projects! ✨
