@@ -1,143 +1,114 @@
-.heroSection {
-  background: linear-gradient(90deg, #ffffff 50%, var(--teal-color) 50%);
-  padding: 0 clamp(20px, 6vw, 70px);
-  padding-bottom: clamp(40px, 8vw, 100px);
-  min-height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-/* Navbar Styles */
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: clamp(25px, 4vw, 40px) 0;
-  font-family: "Roboto Mono", monospace;
-  font-style: italic;
-  margin-bottom: clamp(20px, 4vw, 40px);
-}
-
-.navList {
-  display: flex;
-  gap: clamp(30px, 5vw, 60px);
-  flex-wrap: wrap;
-}
-
-.navList li a {
-  font-size: clamp(0.875rem, 1vw, 1rem);
-  font-weight: bold;
-  color: var(--text-color);
-  position: relative;
-  transition: color 0.3s ease;
-  padding-bottom: 2px;
-}
-
-.navList li a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--accent-color), var(--teal-color));
-  transition: width 0.3s ease;
-}
-
-.navList li a:hover {
-  color: var(--accent-color);
-}
-
-.navList li a:hover::after {
-  width: 100%;
+.heroCard {
+  grid-column: 1 / 8;
+  justify-content: space-between;
 }
 
 .heroContent {
-  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.greeting {
-  font-family: "Roboto Mono", monospace;
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  margin-bottom: 0.5rem;
-  color: var(--accent-color);
+.textSide {
+  flex: 1;
+  min-width: 0;
+}
+
+.avatarWrap {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--card-text-muted);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 5px 14px;
+  border-radius: 20px;
+  width: fit-content;
+  margin-bottom: 6px;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00c853;
+  display: inline-block;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 200, 83, 0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(0, 200, 83, 0); }
+}
+
+.intro {
+  font-family: 'LilGrotesk-Regular', sans-serif;
+  font-size: 0.95rem;
+  color: var(--card-text-muted);
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.nameRow {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 8px;
+}
+
+.nameTypewriter {
+  font-family: 'LilGrotesk', sans-serif;
+  font-size: 1.1rem;
+  color: var(--card-text-dim);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--card-text-dim);
+  animation: typewriter 2.2s steps(17) 0.5s forwards, blink 0.7s step-end infinite;
+  width: 0;
+}
+
+@keyframes typewriter {
+  to { width: 17ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
 }
 
 .wave {
   display: inline-block;
-  transform-origin: 70% 70%;
+  font-size: 1.4rem;
 }
 
-.name {
-  font-size: clamp(2.5rem, 8vw, 8.0rem);
-  font-weight: bold;
-  color: var(--primary-color);
-  background: linear-gradient(135deg, var(--primary-color), var(--teal-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 0.5rem;
-}
-
-.intro {
-  font-family: "LilGrotesk-Regular";
-  font-size: clamp(1.25rem, 3vw, 2rem);
-  color: var(--text-color);
-  line-height: 1.4;
-}
-
-.contactsList {
-  display: flex;
-  gap: clamp(20px, 4vw, 40px);
-  margin-top: clamp(30px, 5vw, 50px);
-}
-
-.contactsList img {
-  width: clamp(35px, 5vw, 45px);
-  height: auto;
-  cursor: pointer;
-  transition: filter 0.3s ease;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1));
-}
-
-.contactsList img:hover {
-  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
+@media (max-width: 1024px) {
+  .heroCard {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (max-width: 768px) {
-  .heroSection {
-    background: linear-gradient(90deg, #ffffff 65%, var(--teal-color) 65%);
+  .heroCard {
+    grid-column: 1 / -1;
   }
-
-  .navList {
-    gap: clamp(20px, 4vw, 30px);
-  }
-
-  .name {
-    white-space: normal;
-    word-wrap: break-word;
-  }
-}
-
-@media (max-width: 480px) {
-  .heroSection {
-    background: linear-gradient(90deg, #ffffff 75%, var(--teal-color) 75%);
-  }
-
-  .navbar {
-    padding: clamp(20px, 4vw, 30px) 0;
-  }
-
-  .navList {
-    gap: clamp(15px, 3vw, 20px);
-    justify-content: center;
-  }
-
-  .intro br {
-    display: inline;
+  .avatarWrap {
+    width: 60px;
+    height: 60px;
   }
 }

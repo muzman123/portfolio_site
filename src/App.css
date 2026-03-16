@@ -1,16 +1,47 @@
-.app {
-  width: 100%;
-  overflow-x: hidden;
+.bentoWrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 18px 28px;
+  min-height: 100vh;
+  position: relative;
 }
 
-.progress-bar {
+/* Cursor spotlight effect */
+.bentoWrapper::before {
+  content: '';
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--accent-color), var(--teal-color), var(--green));
-  transform-origin: 0%;
-  z-index: 9999;
-  box-shadow: 0 2px 10px rgba(255, 61, 0, 0.3);
+  inset: 0;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(100, 80, 200, 0.06),
+    transparent 40%
+  );
+  pointer-events: none;
+  z-index: 0;
+  transition: background 0.15s ease;
+}
+
+.bentoGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gap);
+  grid-auto-rows: auto;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .bentoGrid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .bentoWrapper {
+    padding: 12px;
+  }
+  .bentoGrid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
 }

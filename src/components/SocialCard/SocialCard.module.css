@@ -1,0 +1,99 @@
+.socialCard {
+  grid-column: 5 / 9;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
+
+.linkChip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-decoration: none;
+  color: inherit;
+  transition: filter 0.2s, border-color 0.2s, transform 0.15s;
+}
+
+.linkChip:hover {
+  filter: brightness(1.2);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.iconWrap {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.iconImg {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.emoji {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+  flex: 1;
+}
+
+.linkName {
+  font-family: 'LilGrotesk', sans-serif;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.handle {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.45);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.arrow {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.3);
+  flex-shrink: 0;
+  transition: color 0.2s;
+}
+
+.linkChip:hover .arrow {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 1024px) {
+  .socialCard {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .socialCard {
+    grid-column: 1 / -1;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

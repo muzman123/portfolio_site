@@ -1,0 +1,124 @@
+.osCard {
+  grid-column: 1 / 7;
+}
+
+.repoList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.repoRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.2s;
+  text-decoration: none;
+  color: inherit;
+  gap: 12px;
+}
+
+.repoRow:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.repoInfo {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.repoName {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--card-text);
+  font-weight: 500;
+}
+
+.repoDesc {
+  font-family: 'LilGrotesk-Regular', sans-serif;
+  font-size: 0.75rem;
+  color: var(--card-text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.repoMeta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.75rem;
+  color: #fbbf24;
+}
+
+.mergedBadge {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.65rem;
+  padding: 2px 8px;
+  background: rgba(46, 160, 67, 0.2);
+  border: 1px solid rgba(46, 160, 67, 0.3);
+  border-radius: 6px;
+  color: #3fb950;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 6px 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.badgeIcon {
+  font-size: 1.1rem;
+}
+
+.badgeText {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--card-text-muted);
+}
+
+.clickHint {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: 6px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .osCard {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .osCard {
+    grid-column: 1 / -1;
+  }
+  .repoRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .repoMeta {
+    align-self: flex-end;
+  }
+}

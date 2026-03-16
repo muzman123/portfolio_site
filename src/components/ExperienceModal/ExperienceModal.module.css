@@ -1,0 +1,110 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subtitle {
+  font-family: 'LilGrotesk-Regular', sans-serif;
+  font-size: 0.85rem;
+  color: var(--card-text-dim);
+  margin-top: -8px;
+}
+
+.entry {
+  padding: 20px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.entryHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.logoCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.logoImg {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.logoLetter {
+  font-family: 'LilGrotesk', sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.companyName {
+  font-family: 'LilGrotesk', sans-serif;
+  font-size: 1rem;
+  color: var(--card-text);
+}
+
+.jobTitle {
+  font-family: 'LilGrotesk', sans-serif;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--card-text-dim);
+}
+
+.metaItem svg {
+  color: var(--card-text-dim);
+  flex-shrink: 0;
+}
+
+.description {
+  font-family: 'LilGrotesk-Regular', sans-serif;
+  font-size: 0.9rem;
+  color: var(--card-text-muted);
+  line-height: 1.5;
+  margin: 0 0 14px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.68rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(60, 180, 200, 0.15);
+  border: 1px solid rgba(60, 180, 200, 0.25);
+  color: rgba(60, 200, 220, 0.9);
+}

@@ -1,0 +1,88 @@
+.card {
+  border-radius: var(--card-radius);
+  padding: 16px 18px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  /* Glassmorphism */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Animated gradient border glow on hover */
+.card::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: var(--card-radius);
+  padding: 1px;
+  background: conic-gradient(
+    from var(--border-angle, 0deg),
+    transparent 20%,
+    rgba(140, 80, 200, 0.4) 40%,
+    rgba(60, 180, 200, 0.4) 60%,
+    transparent 80%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  animation: rotateBorder 4s linear infinite;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(100, 80, 200, 0.08);
+}
+
+@keyframes rotateBorder {
+  to { --border-angle: 360deg; }
+}
+
+@property --border-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: 'LilGrotesk', sans-serif;
+  font-size: 1.15rem;
+  color: var(--card-text);
+  line-height: 1.2;
+}
+
+.arrowLink {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--card-text);
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.arrowLink:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+}

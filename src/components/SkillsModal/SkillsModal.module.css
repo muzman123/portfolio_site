@@ -1,0 +1,51 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.categoryLabel {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.skillGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skillPill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid;
+  transition: opacity 0.2s;
+}
+
+.skillPill:hover {
+  opacity: 0.85;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.skillName {
+  font-family: 'LilGrotesk-Regular', sans-serif;
+  font-size: 0.85rem;
+  color: #fff;
+}

@@ -1,0 +1,190 @@
+.page {
+  min-height: 100vh;
+  padding: 32px 48px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'LilGrotesk-Regular', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.backBtn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.pageTitle {
+  font-family: 'LilGrotesk', sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.ghLink {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.ghLink:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.imageWrapper {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.04);
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 12px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover .imageOverlay {
+  opacity: 1;
+}
+
+.overlayLinks {
+  display: flex;
+  gap: 8px;
+}
+
+.overlayLink {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.72rem;
+  text-decoration: none;
+  backdrop-filter: blur(4px);
+  transition: background 0.2s;
+}
+
+.overlayLink:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.cardBody {
+  padding: 18px;
+}
+
+.cardTitle {
+  font-family: 'LilGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.cardDesc {
+  font-family: 'LilGrotesk-Regular', sans-serif;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.65rem;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: rgba(140, 80, 200, 0.15);
+  border: 1px solid rgba(140, 80, 200, 0.3);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .page {
+    padding: 28px 24px 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .page {
+    padding: 20px 16px 40px;
+  }
+  .topBar {
+    margin-bottom: 24px;
+  }
+  .pageTitle {
+    font-size: 1.3rem;
+  }
+}

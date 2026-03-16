@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Muzammil - Resume</title>
+    <title>Resume – Muhammad Muzammil</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap');
+
         * {
             margin: 0;
             padding: 0;
@@ -12,153 +15,198 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #0d0d1a;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Aurora background */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 80% 50% at 20% 40%, rgba(100, 60, 180, 0.15), transparent),
+                radial-gradient(ellipse 60% 40% at 80% 60%, rgba(60, 120, 200, 0.1), transparent),
+                radial-gradient(ellipse 50% 30% at 50% 80%, rgba(60, 180, 200, 0.08), transparent);
+            animation: aurora 12s ease-in-out infinite alternate;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes aurora {
+            0% { filter: hue-rotate(0deg); opacity: 0.8; }
+            100% { filter: hue-rotate(30deg); opacity: 1; }
+        }
+
+        /* Film grain */
+        body::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 0;
         }
 
         .header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 20px 40px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        nav {
+            width: 100%;
+            max-width: 1000px;
+            padding: 24px 32px 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .nav-brand {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #243342;
-            text-decoration: none;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #243342;
-            font-weight: 600;
-            transition: color 0.3s ease;
             position: relative;
+            z-index: 1;
         }
 
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, #667eea, #764ba2);
-            transition: width 0.3s ease;
+        .back-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.6);
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.78rem;
+            padding: 8px 16px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            transition: all 0.2s;
         }
 
-        .nav-links a:hover {
-            color: #667eea;
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.12);
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.2);
         }
 
-        .nav-links a:hover::after {
-            width: 100%;
+        .back-link svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .download-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.78rem;
+            font-weight: 500;
+            padding: 8px 18px;
+            border-radius: 10px;
+            background: rgba(100, 60, 200, 0.25);
+            border: 1px solid rgba(100, 60, 200, 0.35);
+            backdrop-filter: blur(12px);
+            transition: all 0.2s;
+        }
+
+        .download-btn:hover {
+            background: rgba(100, 60, 200, 0.4);
+            border-color: rgba(100, 60, 200, 0.5);
+            transform: translateY(-1px);
+        }
+
+        .title-section {
+            text-align: center;
+            padding: 20px 0 16px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .title-section h1 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 4px;
+        }
+
+        .title-section p {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
         }
 
         .container {
             flex: 1;
-            padding: 40px 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            width: 100%;
+            max-width: 1000px;
+            padding: 0 32px 32px;
+            position: relative;
+            z-index: 1;
         }
 
-        .pdf-container {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        .pdf-card {
+            border-radius: 14px;
             overflow: hidden;
-            width: calc(100% - 40px);
-            max-width: 1000px;
-            height: 85vh;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
         }
 
         .pdf-viewer {
             width: 100%;
-            height: 100%;
+            height: 85vh;
             border: none;
-        }
-
-        .download-btn {
-            display: inline-block;
-            margin: 20px auto;
-            padding: 12px 30px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .download-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
-        }
-
-        .actions {
-            text-align: center;
-            padding-bottom: 20px;
+            display: block;
         }
 
         @media (max-width: 768px) {
             .header {
-                padding: 15px 20px;
+                padding: 16px 16px 0;
             }
 
-            nav {
-                flex-direction: column;
-                gap: 15px;
+            .container {
+                padding: 0 16px 20px;
             }
 
-            .nav-links {
-                gap: 20px;
+            .pdf-viewer {
+                height: 72vh;
             }
 
-            .pdf-container {
-                height: 75vh;
+            .back-link span {
+                display: none;
             }
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <nav>
-            <a href="/" class="nav-brand">Muhammad Muzammil</a>
-            <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/#projects">Projects</a></li>
-                <li><a href="https://medium.com/@muzammilmuhammad12" target="_blank">Blog</a></li>
-            </ul>
-        </nav>
+        <a href="/" class="back-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            <span>Back to portfolio</span>
+        </a>
+        <div class="actions">
+            <a href="/muzammil_cv.pdf" download class="download-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download PDF
+            </a>
+        </div>
     </div>
 
-    <div class="actions">
-        <a href="/muzammil_cv.pdf" download class="download-btn">📥 Download Resume</a>
+    <div class="title-section">
+        <h1>Muhammad Muzammil</h1>
+        <p>Resume</p>
     </div>
 
     <div class="container">
-        <div class="pdf-container">
+        <div class="pdf-card">
             <embed src="/muzammil_cv.pdf" type="application/pdf" class="pdf-viewer">
         </div>
     </div>

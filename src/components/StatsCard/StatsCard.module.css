@@ -1,0 +1,33 @@
+.statsCard {
+  grid-column: 8 / 13;
+  color: #e0e0e0;
+  justify-content: center;
+}
+
+.label {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--card-text-dim);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.ghChart {
+  width: 100%;
+  border-radius: 8px;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 8px rgba(110, 64, 201, 0.3));
+}
+
+@media (max-width: 1024px) {
+  .statsCard {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .statsCard {
+    grid-column: 1 / -1;
+  }
+}

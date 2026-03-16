@@ -1,145 +1,83 @@
-import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
-import { useRef } from 'react'
+import Card from '../Card/Card'
 import styles from './Stack.module.css'
 
-const stackData = {
-  technologies: [
-    { name: 'Python', logo: '/logos/python.png' },
-    { name: 'JavaScript', logo: '/logos/javascript.png' },
-    { name: 'TypeScript', logo: '/logos/typescript.png' },
-    { name: 'C++', logo: '/logos/cpp.png' },
-    { name: 'Java', logo: '/logos/java.png' },
-    { name: 'C#', logo: '/logos/csharp.png' },
-    { name: 'SQL', logo: '/logos/sql.png' },
-  ],
-  frameworks: [
-    { name: 'PyTorch', logo: '/logos/pytorch.svg' },
-    { name: 'React', logo: '/logos/react.png' },
-    { name: 'Next.js', logo: '/logos/nextjs.png' },
-    { name: 'Tailwind CSS', logo: '/logos/tailwind.png' },
-    { name: 'Node.js', logo: '/logos/nodejs.png' },
+const row1 = [
+  { name: 'Python', logo: '/logos/python.png' },
+  { name: 'JavaScript', logo: '/logos/javascript.png' },
+  { name: 'TypeScript', logo: '/logos/typescript.png' },
+  { name: 'C++', logo: '/logos/cpp.png' },
+  { name: 'Java', logo: '/logos/java.png' },
+  { name: 'C#', logo: '/logos/csharp.png' },
+  { name: 'React', logo: '/logos/react.png' },
+  { name: 'Next.js', logo: '/logos/nextjs.png' },
+]
 
-  ],
-  tools: [
-    { name: 'Git', logo: '/logos/git.png' },
-    { name: 'Qt', logo: '/logos/qt.png' },
-    { name: 'Unity', logo: '/logos/unity.png' },
-    { name: 'Unreal Engine', logo: '/logos/unreal-engine.png' },
-    { name: 'Blender', logo: '/logos/blender.png' },
-    { name: 'Figma', logo: '/logos/figma.png' },
-    { name: 'Microsoft Office', logo: '/logos/microsoft.png' },
-    { name: 'Tableau', logo: '/logos/tableau.png' },
-    { name: 'Eclipse', logo: '/logos/eclipse.png' },
-  ],
-  databases: [
-    { name: 'PostgreSQL', logo: '/logos/postgresql.png' },
-    { name: 'MongoDB', logo: '/logos/mongodb.png' },
-    { name: 'MySQL', logo: '/logos/mysql.png' },
-  ],
+const row2 = [
+  { name: 'Node.js', logo: '/logos/nodejs.png' },
+  { name: 'PyTorch', logo: '/logos/pytorch.svg' },
+  { name: 'Unity', logo: '/logos/unity.png' },
+  { name: 'PostgreSQL', logo: '/logos/postgresql.png' },
+  { name: 'MongoDB', logo: '/logos/mongodb.png' },
+  { name: 'Git', logo: '/logos/git.png' },
+  { name: 'Tailwind', logo: '/logos/tailwind.png' },
+  { name: 'Python', logo: '/logos/python.png' },
+]
+
+const row3 = [
+  { name: 'React', logo: '/logos/react.png' },
+  { name: 'Git', logo: '/logos/git.png' },
+  { name: 'TypeScript', logo: '/logos/typescript.png' },
+  { name: 'MongoDB', logo: '/logos/mongodb.png' },
+  { name: 'Java', logo: '/logos/java.png' },
+  { name: 'Next.js', logo: '/logos/nextjs.png' },
+  { name: 'C++', logo: '/logos/cpp.png' },
+  { name: 'Unity', logo: '/logos/unity.png' },
+]
+
+interface StackProps {
+  onOpenSkills?: () => void
 }
 
-const Stack = () => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5 },
-    },
-  }
+const Stack = ({ onOpenSkills }: StackProps) => {
+  const doubled1 = [...row1, ...row1]
+  const doubled2 = [...row2, ...row2]
+  const doubled3 = [...row3, ...row3]
 
   return (
-    <section id="my-stack" className={styles.stackSection} ref={ref}>
-      <motion.h2 
-        className={styles.title}
-        initial={{ opacity: 0, x: -50 }}
-        animate={isInView ? { opacity: 1, x: 0 } : {}}
-        transition={{ duration: 0.6 }}
-      >
-        My Stack
-      </motion.h2>
-      
-      <motion.div 
-        className={styles.stackContainer}
-        variants={containerVariants}
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-      >
-        <motion.div 
-          className={`${styles.stackColumn} ${styles.orange}`}
-          variants={itemVariants}
-        >
-          <h3>Technologies</h3>
-          <ul>
-            {stackData.technologies.map((tech) => (
-              <li key={tech.name}>
-                <img src={tech.logo} alt={`${tech.name} Logo`} className={styles.stackLogo} />
-                {tech.name}
-              </li>
-            ))}
-          </ul>
-        </motion.div>
-
-        <motion.div 
-          className={`${styles.stackColumn} ${styles.green}`}
-          variants={itemVariants}
-        >
-          <h3>Frameworks</h3>
-          <ul>
-            {stackData.frameworks.map((framework) => (
-              <li key={framework.name}>
-                <img src={framework.logo} alt={`${framework.name} Logo`} className={styles.stackLogo} />
-                {framework.name}
-              </li>
-            ))}
-          </ul>
-        </motion.div>
-
-        <motion.div 
-          className={`${styles.stackColumn} ${styles.yellow}`}
-          variants={itemVariants}
-        >
-          <h3>Tools</h3>
-          <ul>
-            {stackData.tools.map((tool) => (
-              <li key={tool.name}>
-                <img src={tool.logo} alt={`${tool.name} Logo`} className={styles.stackLogo} />
-                {tool.name}
-              </li>
-            ))}
-          </ul>
-        </motion.div>
-
-        <motion.div 
-          className={`${styles.stackColumn} ${styles.green}`}
-          variants={itemVariants}
-        >
-          <h3>Database</h3>
-          <ul>
-            {stackData.databases.map((db) => (
-              <li key={db.name}>
-                <img src={db.logo} alt={`${db.name} Logo`} className={styles.stackLogo} />
-                {db.name}
-              </li>
-            ))}
-          </ul>
-        </motion.div>
-      </motion.div>
-    </section>
+    <Card bgColor="var(--card-green)" title="Skills" className={styles.skillsCard} delay={0.12} onCardClick={onOpenSkills}>
+      <p className={styles.subtitle}>What I work with and know well</p>
+      <div className={styles.marqueeWrapper}>
+        <div className={styles.marqueeTrack}>
+          {doubled1.map((skill, i) => (
+            <div key={`r1-${skill.name}-${i}`} className={styles.skillPill}>
+              <img src={skill.logo} alt={skill.name} className={styles.skillLogo} />
+              <span className={styles.skillName}>{skill.name}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className={styles.marqueeWrapper}>
+        <div className={`${styles.marqueeTrack} ${styles.reverse}`}>
+          {doubled2.map((skill, i) => (
+            <div key={`r2-${skill.name}-${i}`} className={styles.skillPill}>
+              <img src={skill.logo} alt={skill.name} className={styles.skillLogo} />
+              <span className={styles.skillName}>{skill.name}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className={styles.marqueeWrapper}>
+        <div className={styles.marqueeTrack} style={{ animationDuration: '22s' }}>
+          {doubled3.map((skill, i) => (
+            <div key={`r3-${skill.name}-${i}`} className={styles.skillPill}>
+              <img src={skill.logo} alt={skill.name} className={styles.skillLogo} />
+              <span className={styles.skillName}>{skill.name}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <p className={styles.clickHint}>Click card to view all skills</p>
+    </Card>
   )
 }
 

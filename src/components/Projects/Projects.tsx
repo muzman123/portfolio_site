@@ -1,157 +1,82 @@
-import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import Card from '../Card/Card'
 import styles from './Projects.module.css'
+import { projectsData } from '../../data/projects'
 
-const projectsData = [
-  {
-    title: 'Music Cluster Visualization',
-    description: 'An interactive web application that visualizes music clustering using a deep learning model with 90%+ accuracy',
-    tags: ['Python', 'PyTorch', 'Vite', 'ML'],
-    image: '/images/mujica.gif',
-    github: 'https://github.com/muzman123/music_cluster_visualization/tree/main',
-  },
-  {
-    title: 'Double-top Stock Signaller',
-    description: 'Professional stock market scanner that detects bearish reversal patterns (double tops) across 250+ stocks with email alerts',
-    tags: ['PYTHON', 'PANDAS', 'NUMPY'],
-    image: '/images/dashcam.png',
-    link: null,
-    github: 'https://github.com/muzman123/double_top_scanner',
-  },
-  {
-    title: 'RateXpose',
-    description: 'Started off as a hackathon idea. Currently developing and rebranding a platform that allows users to anonymously share and compare costs for services like auto and home insurance and utility bills.',
-    tags: ['NEXTJS', 'TYPESCRIPT', 'SUPABASE', 'HTML', 'CSS', 'VERCEL'],
-    image: '/images/ratexpose.png',
-    link: 'https://www.ratexpose.ca/',
-    github: 'https://github.com/muzman123/rateXpose',
-  },
-  {
-    title: 'Note to Self',
-    description: 'Note to Self is a PSX style indie horror game made for a 10 day game jam. Rated positively with over 200 downloads',
-    tags: ['UNITY3D', 'C#', 'BLENDER3D'],
-    image: '/images/pic09.png',
-    link: 'https://muzmil.itch.io/note-to-self',
-    github: null,
-  },
-  {
-    title: 'Last Stop',
-    description: 'Developed in a week for a game jam, Last Stop is a Unity3D horror game inspired by ps2 low-poly horror. Rated positively with over 6000 downloads',
-    tags: ['UNITY3D', 'C#', 'BLENDER3D', 'GLSL'],
-    image: '/images/pic10.png',
-    link: 'https://muzmil.itch.io/last-stop',
-    github: 'https://github.com/muzman123/last_stop_unity3D',
-  },
-  {
-    title: 'Globe News',
-    description: 'A web application that combines 3D visualization with real-time news aggregation webscraped off Google news. It offers users an engaging way to explore global news by interacting with a 3D model of Earth.',
-    tags: ['REACT', 'JAVASCRIPT', 'THREEJS', 'HTML', 'CSS'],
-    image: '/images/functionalgif.gif',
-    link: null,
-    github: 'https://github.com/muzman123/globenews',
-  },
-  
-]
+interface ProjectsProps {
+  onNavigate?: () => void
+}
 
-const Projects = () => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+const Projects = ({ onNavigate }: ProjectsProps) => {
+  const [current, setCurrent] = useState(0)
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-      },
-    },
+  const prev = (e: React.MouseEvent) => {
+    e.stopPropagation()
+    setCurrent((c) => (c === 0 ? projectsData.length - 2 : c - 2))
+  }
+  const next = (e: React.MouseEvent) => {
+    e.stopPropagation()
+    setCurrent((c) => (c + 2 >= projectsData.length ? 0 : c + 2))
   }
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6 },
-    },
-  }
+  const visible = projectsData.slice(current, current + 2)
+  const displayProjects = visible.length < 2
+    ? [...visible, ...projectsData.slice(0, 2 - visible.length)]
+    : visible
 
   return (
-    <section id="projects" className={styles.projectsSection} ref={ref}>
-      <motion.h2 
-        className={styles.title}
-        initial={{ opacity: 0, x: -50 }}
-        animate={isInView ? { opacity: 1, x: 0 } : {}}
-        transition={{ duration: 0.6 }}
-      >
-        Projects
-      </motion.h2>
-      
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-      >
-        {projectsData.map((project, index) => (
-          <motion.div 
-            key={index}
-            className={styles.projectCard}
-            variants={itemVariants}
-            whileHover={{ y: -10 }}
-          >
-            <div className={styles.projectInfo}>
-              <h3 className={styles.projectTitle}>{project.title}</h3>
-              
-              {project.link && (
-                <a 
-                  href={project.link} 
-                  className={styles.projectButton}
+    <Card bgColor="var(--card-orange)" title="Projects" linkHref="https://github.com/muzman123" className={styles.projectsCard} delay={0.24} onCardClick={onNavigate}>
+      <div className={styles.carousel}>
+        <button className={styles.arrowBtn} onClick={prev} aria-label="Previous projects">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+
+        <div className={styles.projectsRow}>
+          <AnimatePresence mode="wait">
+            {displayProjects.map((project, i) => (
+              <motion.div
+                key={project.title}
+                className={styles.projectSlide}
+                initial={{ opacity: 0, x: 30 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -30 }}
+                transition={{ duration: 0.3, delay: i * 0.1 }}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <a
+                  href={project.link || project.github || '#'}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className={styles.slideLink}
                 >
-                  See it in Action
+                  <img src={project.image} alt={project.title} className={styles.projectImage} />
+                  <div className={styles.projectOverlay}>
+                    <h4 className={styles.projectTitle}>{project.title}</h4>
+                    <div className={styles.projectTags}>
+                      {project.tags.map((tag) => (
+                        <span key={tag} className={styles.tag}>{tag}</span>
+                      ))}
+                    </div>
+                  </div>
                 </a>
-              )}
-              
-              <p className={styles.projectDescription}>{project.description}</p>
-              
-              <div className={styles.projectTags}>
-                {project.tags.map((tag, idx) => (
-                  <span key={idx} className={styles.tag}>{tag}</span>
-                ))}
-              </div>
-              
-              {project.github && (
-                <div className={styles.projectIcons}>
-                  <a 
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <motion.img 
-                      src="/logos/git.png" 
-                      alt="GitHub"
-                      whileHover={{ scale: 1.1, rotate: 360 }}
-                      transition={{ duration: 0.3 }}
-                    />
-                  </a>
-                </div>
-              )}
-            </div>
-            
-            <div className={styles.projectImages}>
-              <motion.img 
-                src={project.image} 
-                alt={`${project.title} Screenshot`}
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-              />
-            </div>
-          </motion.div>
-        ))}
-      </motion.div>
-    </section>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </div>
+
+        <button className={styles.arrowBtn} onClick={next} aria-label="Next projects">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
+      </div>
+      {onNavigate && (
+        <p className={styles.clickHint}>Click card to see all projects</p>
+      )}
+    </Card>
   )
 }
 
