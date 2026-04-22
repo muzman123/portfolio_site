@@ -27,7 +27,7 @@
   --card-green: rgba(60, 180, 120, 0.15);
   --card-blue: rgba(60, 120, 200, 0.15);
   --card-orange: rgba(200, 120, 50, 0.15);
-  --card-purple: rgba(140, 80, 200, 0.15);
+  --card-purple: rgba(50, 180, 160, 0.15);
   --card-cyan: rgba(60, 180, 200, 0.15);
   --card-white: rgba(255, 255, 255, 0.08);
   --card-dark: rgba(255, 255, 255, 0.05);
@@ -57,10 +57,10 @@ body::before {
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 20% 30%, rgba(26, 10, 46, 0.8) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 80% at 80% 70%, rgba(10, 26, 46, 0.7) 0%, transparent 55%),
-    radial-gradient(ellipse 70% 50% at 50% 50%, rgba(40, 20, 60, 0.5) 0%, transparent 50%),
-    radial-gradient(ellipse 90% 40% at 70% 20%, rgba(20, 40, 60, 0.4) 0%, transparent 50%);
+    radial-gradient(ellipse 80% 60% at 20% 30%, rgba(10, 30, 40, 0.8) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 80% at 80% 70%, rgba(15, 40, 35, 0.7) 0%, transparent 55%),
+    radial-gradient(ellipse 70% 50% at 50% 50%, rgba(10, 25, 30, 0.5) 0%, transparent 50%),
+    radial-gradient(ellipse 90% 40% at 70% 20%, rgba(20, 40, 50, 0.4) 0%, transparent 50%);
   background-size: 200% 200%;
   animation: aurora 18s ease-in-out infinite alternate;
   z-index: -2;

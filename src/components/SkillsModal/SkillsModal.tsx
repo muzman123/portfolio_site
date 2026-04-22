@@ -40,9 +40,9 @@ const categories = [
   },
   {
     label: 'Databases',
-    accent: 'rgba(140, 80, 200, 0.2)',
-    accentBorder: 'rgba(140, 80, 200, 0.4)',
-    accentColor: '#8c50c8',
+    accent: 'rgba(50, 180, 160, 0.2)',
+    accentBorder: 'rgba(50, 180, 160, 0.4)',
+    accentColor: '#32b4a0',
     skills: [
       { name: 'PostgreSQL', logo: '/logos/postgresql.png' },
       { name: 'MongoDB', logo: '/logos/mongodb.png' },

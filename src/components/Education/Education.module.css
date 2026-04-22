@@ -45,7 +45,7 @@
 .progressPct {
   font-family: 'Roboto Mono', monospace;
   font-size: 0.7rem;
-  color: rgba(140, 80, 200, 0.9);
+  color: rgba(50, 180, 160, 0.9);
   font-weight: 600;
 }
 
@@ -60,7 +60,7 @@
 .progressFill {
   height: 100%;
   border-radius: 3px;
-  background: linear-gradient(90deg, rgba(140, 80, 200, 0.6), rgba(140, 80, 200, 0.9));
+  background: linear-gradient(90deg, rgba(50, 180, 160, 0.6), rgba(50, 180, 160, 0.9));
   animation: fillIn 1.5s ease-out forwards;
   transform-origin: left;
   position: relative;
@@ -145,8 +145,8 @@
   gap: 4px;
   padding: 5px 10px;
   border-radius: 8px;
-  background: rgba(140, 80, 200, 0.12);
-  border: 1px solid rgba(140, 80, 200, 0.2);
+  background: rgba(50, 180, 160, 0.12);
+  border: 1px solid rgba(50, 180, 160, 0.2);
   font-family: 'LilGrotesk-Regular', sans-serif;
   font-size: 0.75rem;
   color: var(--card-text);

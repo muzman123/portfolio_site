@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portfolio",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "npx", "vite", "--host"],
+      "port": 5173,
+      "autoPort": true
+    }
+  ]
+}

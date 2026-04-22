@@ -24,7 +24,7 @@
   background: conic-gradient(
     from var(--border-angle, 0deg),
     transparent 20%,
-    rgba(140, 80, 200, 0.4) 40%,
+    rgba(50, 180, 160, 0.4) 40%,
     rgba(60, 180, 200, 0.4) 60%,
     transparent 80%
   );
@@ -42,7 +42,7 @@
 }
 
 .card:hover {
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(100, 80, 200, 0.08);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(50, 180, 160, 0.08);
 }
 
 @keyframes rotateBorder {
