@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "fetch:github": "node scripts/fetch-github.mjs",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },

@@ -1,0 +1,35 @@
+name: Refresh GitHub data
+on:
+  schedule:
+    - cron: '17 6 * * *' 
+  workflow_dispatch: {} # allow manual runs from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch latest GitHub data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run fetch:github
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet src/data/generated; then
+            echo "No changes to commit."
+          else
+            git add src/data/generated
+            git commit -m "chore: refresh GitHub data [skip ci]"
+            git push
+          fi

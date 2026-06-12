@@ -1,26 +1,6 @@
 import Card from '../Card/Card'
 import styles from './OpenSource.module.css'
-
-const contributions = [
-  {
-    repo: 'wasp-lang/wasp',
-    stars: '18.2k',
-    desc: 'Full-stack framework for the AI era',
-    url: 'https://github.com/wasp-lang/wasp/pulls?q=author%3Amuzman123',
-  },
-  {
-    repo: 'Agenta-AI/agenta',
-    stars: '3.9k',
-    desc: 'Open-source LLMOps platform',
-    url: 'https://github.com/Agenta-AI/agenta/pulls?q=author%3Amuzman123',
-  },
-  {
-    repo: 'stacklok/toolhive',
-    stars: '1.7k',
-    desc: 'MCP server deployment tool',
-    url: 'https://github.com/stacklok/toolhive/pulls?q=author%3Amuzman123',
-  },
-]
+import { contributions, summary } from '../../data/opensource'
 
 interface OpenSourceProps {
   onOpenGithub?: () => void
@@ -57,7 +37,9 @@ function OpenSource({ onOpenGithub }: OpenSourceProps) {
       </div>
       <div className={styles.badge}>
         <span className={styles.badgeIcon}>🦈</span>
-        <span className={styles.badgeText}>Pull Shark x2</span>
+        <span className={styles.badgeText}>
+          {summary.totalMergedPRs} merged PRs · {summary.externalRepoCount} repos
+        </span>
       </div>
       <p className={styles.clickHint}>Click card for live GitHub activity</p>
     </Card>

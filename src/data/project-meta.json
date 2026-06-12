@@ -1,0 +1,64 @@
+{
+  "_comment": "Editable metadata for the dynamic Projects section. Shared by scripts/fetch-github.mjs (build time) and src/data/projects.ts (runtime merge). Projects are ordered newest-first by last-pushed date. BLACKLIST: add a repo name to the 'blacklist' array to stop it ever appearing on the Projects tab (case-insensitive). Keys under 'overrides' are repo names used to keep a curated image/title/tags/link. Add non-GitHub projects (e.g. itch.io games) under 'manual' with a 'date' so they sort into the timeline.",
+  "username": "muzman123",
+  "defaultImage": "/images/logo.png",
+  "blacklist": ["portfolio_site", "blog", ".github", "muzman123", "solar_system_threejs", "open_ai_hackathon", "code_the_change_hackathon", "intern_application_tracker", "Calgary-Hacks-2025","HTC_case_comp","homekitchen"],
+  "overrides": {
+    "music_cluster_visualization": {
+      "title": "Music Cluster Visualization",
+      "image": "/images/mujica.gif",
+      "tags": ["Python", "PyTorch", "Vite", "ML"]
+    },
+    "double_top_scanner": {
+      "title": "Double-top Stock Signaller",
+      "description": "Professional stock market scanner that detects bearish reversal patterns across 250+ stocks with email alerts",
+      "image": "/images/dashcam.png",
+      "tags": ["Python", "Pandas", "Numpy"]
+    },
+    "rateXpose": {
+      "title": "RateXpose",
+      "description": "A platform that allows users to anonymously share and compare costs for services like auto/home insurance and utility bills.",
+      "image": "/images/ratexpose.png",
+      "tags": ["Next.js", "TypeScript", "Supabase"],
+      "link": "https://www.ratexpose.ca/"
+    },
+    "last_stop_unity3D": {
+      "title": "Last Stop",
+      "description": "Unity3D horror game inspired by ps2 low-poly horror. Rated positively with over 6000 downloads",
+      "image": "/images/pic10.png",
+      "tags": ["Unity3D", "C#", "GLSL"],
+      "link": "https://muzmil.itch.io/last-stop"
+    },
+    "globenews": {
+      "title": "Globe News",
+      "description": "3D visualization with real-time news aggregation. Explore global news by interacting with a 3D Earth model.",
+      "image": "/images/functionalgif.gif",
+      "tags": ["React", "Three.js", "JavaScript"]
+    },
+    "opengl_procedural_terrain_generation": {
+      "title": "Procedural Terrain Generation",
+      "description": "Real-time procedural terrain generation using Perlin noise and light rendering implemented in C++ with OpenGL.",
+      "image": "/images/graphics_demo.gif",
+      "tags": ["C++", "OpenGL", "GLSL"]
+    },
+    "openllm-leaderboard-audit": {
+      "title": "OpenLLM Leaderboard Audit",
+      "description": "An audit of the HuggingFace OpenLLM leaderboard rankings",
+      "tags": ["Python", "Data Analysis", "NLP"]
+    },
+    "trading_strategy_unsupervised_learning": {
+      "tags": ["Python", "ML", "Pandas", "Numpy"],
+      "image": "/images/return_graphs.png"
+    }
+  },
+  "manual": [
+    {
+      "title": "Note to Self",
+      "description": "PSX style indie horror game made for a 10 day game jam. Rated positively with over 200 downloads",
+      "tags": ["Unity3D", "C#", "Blender"],
+      "image": "/images/pic09.png",
+      "link": "https://muzmil.itch.io/note-to-self",
+      "date": "2024-03-01"
+    }
+  ]
+}

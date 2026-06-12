@@ -1,0 +1,57 @@
+{
+  "contributions": [
+    {
+      "repo": "wasp-lang/wasp",
+      "starsRaw": 18390,
+      "stars": "18.4k",
+      "desc": "The batteries-included full-stack framework for the AI era. Develop JS/TS web apps (React, Node.js, and Prisma) using declarative code that abstracts away complex full-stack features like auth, background jobs, RPC, email sending, end-to-end type safety, single-command deployment, and more.",
+      "prCount": 1,
+      "url": "https://github.com/wasp-lang/wasp/pulls?q=author%3Amuzman123"
+    },
+    {
+      "repo": "Agenta-AI/agenta",
+      "starsRaw": 4193,
+      "stars": "4.2k",
+      "desc": "The open-source LLMOps platform: prompt playground, prompt management, LLM evaluation, and LLM observability all in one place.",
+      "prCount": 1,
+      "url": "https://github.com/Agenta-AI/agenta/pulls?q=author%3Amuzman123"
+    },
+    {
+      "repo": "stacklok/toolhive",
+      "starsRaw": 1871,
+      "stars": "1.9k",
+      "desc": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
+      "prCount": 1,
+      "url": "https://github.com/stacklok/toolhive/pulls?q=author%3Amuzman123"
+    },
+    {
+      "repo": "filiptrivan/spiderly",
+      "starsRaw": 60,
+      "stars": "60",
+      "desc": ".NET (C#) Web App Framework Built For AI Coding Agents",
+      "prCount": 1,
+      "url": "https://github.com/filiptrivan/spiderly/pulls?q=author%3Amuzman123"
+    },
+    {
+      "repo": "privacy-ethereum/pse.dev",
+      "starsRaw": 27,
+      "stars": "27",
+      "desc": "The PSE website",
+      "prCount": 1,
+      "url": "https://github.com/privacy-ethereum/pse.dev/pulls?q=author%3Amuzman123"
+    },
+    {
+      "repo": "UCSolarCarTeam/Helios-Mercury",
+      "starsRaw": 0,
+      "stars": "0",
+      "desc": "Mercury dashboard code written in QML/C++",
+      "prCount": 3,
+      "url": "https://github.com/UCSolarCarTeam/Helios-Mercury/pulls?q=author%3Amuzman123"
+    }
+  ],
+  "summary": {
+    "totalMergedPRs": 18,
+    "externalRepoCount": 9
+  },
+  "generatedAt": "2026-06-12T00:59:09.938Z"
+}

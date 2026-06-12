@@ -11,7 +11,7 @@ const experienceData = [
   {
     company: 'Cenovus Energy',
     title: 'SWE Intern',
-    dates: "May '25 – Present",
+    dates: "May '25 – April '26",
     color: '#E53935',
   },
   {
@@ -19,6 +19,12 @@ const experienceData = [
     title: 'Full-Stack Engineer',
     dates: "Jul '25 – Present",
     color: '#6C63FF',
+  },
+  {
+    company: 'Accenture',
+    title: 'Summer Software Engineer Analyst',
+    dates: "May '26 – Present",
+    color: '#A100FF',
   },
 ]
 

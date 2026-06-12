@@ -1,3 +1,6 @@
+import generated from './generated/repos.json'
+import meta from './project-meta.json'
+
 export interface Project {
   title: string
   description: string
@@ -7,49 +10,101 @@ export interface Project {
   link?: string
 }
 
-export const projectsData: Project[] = [
-  {
-    title: 'Music Cluster Visualization',
-    description: 'An interactive web application that visualizes music clustering using a deep learning model with 90%+ accuracy',
-    tags: ['Python', 'PyTorch', 'Vite', 'ML'],
-    image: '/images/mujica.gif',
-    github: 'https://github.com/muzman123/music_cluster_visualization/tree/main',
-  },
-  {
-    title: 'Double-top Stock Signaller',
-    description: 'Professional stock market scanner that detects bearish reversal patterns across 250+ stocks with email alerts',
-    tags: ['Python', 'Pandas', 'Numpy'],
-    image: '/images/dashcam.png',
-    github: 'https://github.com/muzman123/double_top_scanner',
-  },
-  {
-    title: 'RateXpose',
-    description: 'A platform that allows users to anonymously share and compare costs for services like auto/home insurance and utility bills.',
-    tags: ['Next.js', 'TypeScript', 'Supabase'],
-    image: '/images/ratexpose.png',
-    link: 'https://www.ratexpose.ca/',
-    github: 'https://github.com/muzman123/rateXpose',
-  },
-  {
-    title: 'Note to Self',
-    description: 'PSX style indie horror game made for a 10 day game jam. Rated positively with over 200 downloads',
-    tags: ['Unity3D', 'C#', 'Blender'],
-    image: '/images/pic09.png',
-    link: 'https://muzmil.itch.io/note-to-self',
-  },
-  {
-    title: 'Last Stop',
-    description: 'Unity3D horror game inspired by ps2 low-poly horror. Rated positively with over 6000 downloads',
-    tags: ['Unity3D', 'C#', 'GLSL'],
-    image: '/images/pic10.png',
-    link: 'https://muzmil.itch.io/last-stop',
-    github: 'https://github.com/muzman123/last_stop_unity3D',
-  },
-  {
-    title: 'Globe News',
-    description: '3D visualization with real-time news aggregation. Explore global news by interacting with a 3D Earth model.',
-    tags: ['React', 'Three.js', 'JavaScript'],
-    image: '/images/functionalgif.gif',
-    github: 'https://github.com/muzman123/globenews',
-  },
-]
+interface GeneratedRepo {
+  name: string
+  description: string
+  html_url: string
+  homepage: string
+  language: string
+  topics: string[]
+  stargazers_count: number
+  pushed_at: string
+}
+
+interface Override {
+  title?: string
+  description?: string
+  tags?: string[]
+  image?: string
+  link?: string
+}
+
+interface ManualProject {
+  title: string
+  description: string
+  tags: string[]
+  image: string
+  github?: string
+  link?: string
+  date?: string
+}
+
+// Sortable project: a Project plus the date we rank on (stripped before export).
+type RankedProject = Project & { date: number }
+
+const USER = meta.username
+const defaultImage = meta.defaultImage
+const overrides = meta.overrides as Record<string, Override>
+
+// Case-insensitive lookup into the overrides map.
+const overrideFor = (name: string): Override =>
+  overrides[name] ?? overrides[name.toLowerCase()] ?? {}
+
+// Fallback when a repo has no curated image: GitHub's auto-generated OG card.
+const ogImage = (name: string) =>
+  `https://opengraph.githubassets.com/1/${USER}/${name}`
+
+// "trading_strategy" -> "Trading Strategy" for repos without a curated title.
+const prettify = (name: string) =>
+  name
+    .replace(/[-_]+/g, ' ')
+    .replace(/\b\w/g, (c) => c.toUpperCase())
+    .trim()
+
+function fromRepo(repo: GeneratedRepo): RankedProject {
+  const o = overrideFor(repo.name)
+  const description = repo.description?.trim() || o.description || ''
+  const tags =
+    o.tags ?? (repo.topics.length ? repo.topics : repo.language ? [repo.language] : [])
+  return {
+    title: o.title || prettify(repo.name),
+    description,
+    tags,
+    image: o.image || ogImage(repo.name) || defaultImage,
+    github: repo.html_url,
+    link: o.link || repo.homepage || undefined,
+    date: repo.pushed_at ? Date.parse(repo.pushed_at) : 0,
+  }
+}
+
+function fromManual(m: ManualProject): RankedProject {
+  return {
+    title: m.title,
+    description: m.description,
+    tags: m.tags,
+    image: m.image,
+    github: m.github,
+    link: m.link,
+    date: m.date ? Date.parse(m.date) : 0,
+  }
+}
+
+// Blacklist is also applied here (not just in the fetch script) so editing
+// project-meta.json takes effect on reload without re-running fetch:github.
+const blacklist = new Set((meta.blacklist ?? []).map((s) => s.toLowerCase()))
+
+const generatedRepos = (generated.repos ?? []).filter(
+  (r) => !blacklist.has(r.name.toLowerCase())
+) as GeneratedRepo[]
+const manual = (meta.manual ?? []) as ManualProject[]
+
+// Newest first, by last-pushed date (manual projects use their `date`).
+const ranked: RankedProject[] = [
+  ...generatedRepos.map(fromRepo),
+  ...manual.map(fromManual),
+].sort((a, b) => b.date - a.date)
+
+// Strip the ranking-only field so the public shape stays a clean Project.
+export const projectsData: Project[] = ranked.map(
+  ({ date: _d, ...project }) => project
+)

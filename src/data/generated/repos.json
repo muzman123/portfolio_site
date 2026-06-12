@@ -1,0 +1,155 @@
+{
+  "repos": [
+    {
+      "name": "opengl_procedural_terrain_generation",
+      "description": "",
+      "html_url": "https://github.com/muzman123/opengl_procedural_terrain_generation",
+      "homepage": "",
+      "language": "C",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2026-06-08T03:28:02Z"
+    },
+    {
+      "name": "openllm-leaderboard-audit",
+      "description": "An analysis of the HuggingFace OpenLLM leaderboard and its accuracy",
+      "html_url": "https://github.com/muzman123/openllm-leaderboard-audit",
+      "homepage": "",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2026-06-08T02:19:26Z"
+    },
+    {
+      "name": "trading_strategy_unsupervised_learning",
+      "description": "Custom momentum-based ML trading strategy development and backtesting to outperform the S&P500",
+      "html_url": "https://github.com/muzman123/trading_strategy_unsupervised_learning",
+      "homepage": "",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2026-05-27T05:14:06Z"
+    },
+    {
+      "name": "rateXpose",
+      "description": "",
+      "html_url": "https://github.com/muzman123/rateXpose",
+      "homepage": "https://www.ratexpose.ca",
+      "language": "TypeScript",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2026-03-11T16:42:04Z"
+    },
+    {
+      "name": "music_cluster_visualization",
+      "description": "Interactive web app that visualizes music clustering based on AI genre classification",
+      "html_url": "https://github.com/muzman123/music_cluster_visualization",
+      "homepage": "",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2025-12-09T03:42:43Z"
+    },
+    {
+      "name": "double_top_scanner",
+      "description": "",
+      "html_url": "https://github.com/muzman123/double_top_scanner",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2025-10-29T02:11:30Z"
+    },
+    {
+      "name": "homekitchen",
+      "description": "",
+      "html_url": "https://github.com/muzman123/homekitchen",
+      "homepage": "",
+      "language": "JavaScript",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2025-04-23T05:46:01Z"
+    },
+    {
+      "name": "HTC_case_comp",
+      "description": "",
+      "html_url": "https://github.com/muzman123/HTC_case_comp",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2025-03-02T00:02:50Z"
+    },
+    {
+      "name": "Calgary-Hacks-2025",
+      "description": "Lorax AI training repository",
+      "html_url": "https://github.com/muzman123/Calgary-Hacks-2025",
+      "homepage": "https://github.com/muzman123/forest-guardian-dashboard",
+      "language": "Python",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2025-02-16T18:13:06Z"
+    },
+    {
+      "name": "intern_application_tracker",
+      "description": "",
+      "html_url": "https://github.com/muzman123/intern_application_tracker",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2024-11-17T07:31:10Z"
+    },
+    {
+      "name": "globenews",
+      "description": "",
+      "html_url": "https://github.com/muzman123/globenews",
+      "homepage": "https://globenews.vercel.app/",
+      "language": "JavaScript",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2024-11-15T02:43:41Z"
+    },
+    {
+      "name": "code_the_change_hackathon",
+      "description": "",
+      "html_url": "https://github.com/muzman123/code_the_change_hackathon",
+      "homepage": "",
+      "language": "TypeScript",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2024-11-12T02:50:50Z"
+    },
+    {
+      "name": "open_ai_hackathon",
+      "description": "",
+      "html_url": "https://github.com/muzman123/open_ai_hackathon",
+      "homepage": "https://open-ai-hackathon.vercel.app/",
+      "language": "TypeScript",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2024-11-01T03:11:09Z"
+    },
+    {
+      "name": "solar_system_threejs",
+      "description": "",
+      "html_url": "https://github.com/muzman123/solar_system_threejs",
+      "homepage": "",
+      "language": "HTML",
+      "topics": [],
+      "stargazers_count": 0,
+      "pushed_at": "2024-05-20T06:08:45Z"
+    },
+    {
+      "name": "last_stop_unity3D",
+      "description": "A Unity3D Horror Game ",
+      "html_url": "https://github.com/muzman123/last_stop_unity3D",
+      "homepage": "",
+      "language": "C#",
+      "topics": [],
+      "stargazers_count": 1,
+      "pushed_at": "2024-04-29T04:56:08Z"
+    }
+  ],
+  "generatedAt": "2026-06-12T00:59:07.899Z"
+}

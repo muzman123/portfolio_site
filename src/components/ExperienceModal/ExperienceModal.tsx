@@ -15,7 +15,7 @@ const experiences = [
     company: 'Cenovus Energy',
     color: '#E53935',
     title: 'Software Engineering Intern',
-    dates: 'May 2025 – Present',
+    dates: 'May 2025 – April 2026',
     location: 'Calgary',
     description:
       'Automated sensor data processing with Python and PowerShell, eliminating 200+ hours of quarterly manual work and saving $40k annually. Diagnosed critical PLC communication failures using Wireshark, restoring 99%+ uptime across 50+ field devices.',
@@ -30,6 +30,16 @@ const experiences = [
     description:
       'Designed an end-to-end FastAPI-based intelligence platform with agentic architecture and multi-agent orchestration. Architected parallel research system with RAG pipelines and vector search using PostgreSQL and Supabase.',
     tags: ['FastAPI', 'PostgreSQL', 'Supabase', 'RAG', 'LangChain', 'Python'],
+  },
+  {
+    company: 'Accenture',
+    color: '#A100FF',
+    title: 'Summer Software Engineer Analyst',
+    dates: 'May 2026 – Present',
+    location: 'Calgary',
+    description:
+      'Summer Software Engineer Analyst on the technology team. (Update this with your responsibilities and impact.)',
+    tags: ['Software Engineering'],
   },
 ]
 
