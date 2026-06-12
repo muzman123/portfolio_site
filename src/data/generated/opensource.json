@@ -2,7 +2,7 @@
   "contributions": [
     {
       "repo": "wasp-lang/wasp",
-      "starsRaw": 18390,
+      "starsRaw": 18389,
       "stars": "18.4k",
       "desc": "The batteries-included full-stack framework for the AI era. Develop JS/TS web apps (React, Node.js, and Prisma) using declarative code that abstracts away complex full-stack features like auth, background jobs, RPC, email sending, end-to-end type safety, single-command deployment, and more.",
       "prCount": 1,
@@ -53,5 +53,174 @@
     "totalMergedPRs": 18,
     "externalRepoCount": 9
   },
-  "generatedAt": "2026-06-12T00:59:09.938Z"
+  "activity": {
+    "mergedPRs": [
+      {
+        "repo": "stacklok/toolhive",
+        "title": "Add request body size limit middleware function",
+        "url": "https://github.com/stacklok/toolhive/pull/3114",
+        "date": "2026-01-13T14:25:13Z"
+      },
+      {
+        "repo": "privacy-ethereum/pse.dev",
+        "title": "fix: resolve hydration errors in theme toggle components",
+        "url": "https://github.com/privacy-ethereum/pse.dev/pull/608",
+        "date": "2026-01-12T11:27:00Z"
+      },
+      {
+        "repo": "wasp-lang/wasp",
+        "title": "fix: testing documentation bugs",
+        "url": "https://github.com/wasp-lang/wasp/pull/3577",
+        "date": "2026-01-07T15:59:55Z"
+      },
+      {
+        "repo": "filiptrivan/spiderly",
+        "title": "Feature/attribute doc generation",
+        "url": "https://github.com/filiptrivan/spiderly/pull/172",
+        "date": "2025-12-23T02:10:46Z"
+      },
+      {
+        "repo": "Agenta-AI/agenta",
+        "title": "[fix] Add api key error logging in `sdk`",
+        "url": "https://github.com/Agenta-AI/agenta/pull/3218",
+        "date": "2025-12-18T10:25:00Z"
+      },
+      {
+        "repo": "UCSolarCarTeam/Helios-Mercury",
+        "title": "Vsc546 faults message component",
+        "url": "https://github.com/UCSolarCarTeam/Helios-Mercury/pull/105",
+        "date": "2025-05-15T01:59:57Z"
+      },
+      {
+        "repo": "UCSolarCarTeam/Helios-Mercury",
+        "title": "created debug clusters and toggling logic",
+        "url": "https://github.com/UCSolarCarTeam/Helios-Mercury/pull/95",
+        "date": "2025-03-31T20:58:42Z"
+      },
+      {
+        "repo": "UCSolarCarTeam/Helios-Mercury",
+        "title": "Vsc587 temperature component",
+        "url": "https://github.com/UCSolarCarTeam/Helios-Mercury/pull/91",
+        "date": "2025-03-23T22:36:30Z"
+      },
+      {
+        "repo": "muzman123/code_the_change_hackathon",
+        "title": "forms removed, dsahboard added",
+        "url": "https://github.com/muzman123/code_the_change_hackathon/pull/5",
+        "date": "2024-11-12T02:50:51Z"
+      },
+      {
+        "repo": "muzman123/code_the_change_hackathon",
+        "title": "small form made :)",
+        "url": "https://github.com/muzman123/code_the_change_hackathon/pull/3",
+        "date": "2024-11-10T04:32:30Z"
+      },
+      {
+        "repo": "muzman123/open_ai_hackathon",
+        "title": "working frontend",
+        "url": "https://github.com/muzman123/open_ai_hackathon/pull/2",
+        "date": "2024-11-01T03:11:09Z"
+      },
+      {
+        "repo": "muzman123/open_ai_hackathon",
+        "title": "Chat branch",
+        "url": "https://github.com/muzman123/open_ai_hackathon/pull/1",
+        "date": "2024-11-01T03:10:38Z"
+      },
+      {
+        "repo": "UCSolarCarTeam/Helios-Dashboard",
+        "title": "Camera screen feature",
+        "url": "https://github.com/UCSolarCarTeam/Helios-Dashboard/pull/5",
+        "date": "2024-10-31T01:47:58Z"
+      },
+      {
+        "repo": "UCSolarCarTeam/Helios-Dashboard",
+        "title": "Dashboard main branch",
+        "url": "https://github.com/UCSolarCarTeam/Helios-Dashboard/pull/4",
+        "date": "2024-10-26T16:56:38Z"
+      },
+      {
+        "repo": "UCSolarCarTeam/Helios-Dashboard",
+        "title": "Muz/refactor",
+        "url": "https://github.com/UCSolarCarTeam/Helios-Dashboard/pull/3",
+        "date": "2024-09-05T01:54:47Z"
+      },
+      {
+        "repo": "UCSolarCarTeam/Helios-Dashboard-Legacy",
+        "title": "Major refactor of Communication layer",
+        "url": "https://github.com/UCSolarCarTeam/Helios-Dashboard-Legacy/pull/25",
+        "date": "2024-03-19T00:35:21Z"
+      },
+      {
+        "repo": "minoriolguin/seng300-group4-iteration3",
+        "title": "Pay by banknotes and change handling works",
+        "url": "https://github.com/minoriolguin/seng300-group4-iteration3/pull/62",
+        "date": "2023-12-05T21:19:47Z"
+      },
+      {
+        "repo": "minoriolguin/seng300-group4-iteration3",
+        "title": "Implement pay in gui",
+        "url": "https://github.com/minoriolguin/seng300-group4-iteration3/pull/48",
+        "date": "2023-12-04T14:42:05Z"
+      }
+    ],
+    "openPRs": [],
+    "issues": [
+      {
+        "repo": "google-gemini/gemini-cli",
+        "title": "Edit tool: flexible match drops newline",
+        "url": "https://github.com/google-gemini/gemini-cli/issues/22111",
+        "date": "2026-03-12T03:52:38Z"
+      },
+      {
+        "repo": "pocketpy/pocketpy",
+        "title": "[BUG] list.index() crashes or returns wrong result with negative start index",
+        "url": "https://github.com/pocketpy/pocketpy/issues/468",
+        "date": "2026-03-04T05:37:32Z"
+      },
+      {
+        "repo": "mesa/mesa",
+        "title": "[BUG] Cell.add_agent sets empty=False before capacity check",
+        "url": "https://github.com/mesa/mesa/issues/3429",
+        "date": "2026-03-04T00:00:54Z"
+      },
+      {
+        "repo": "mesa/mesa",
+        "title": "[BUG] FixedAgent keeps a reference to a cell that may reject it",
+        "url": "https://github.com/mesa/mesa/issues/3411",
+        "date": "2026-03-02T05:09:14Z"
+      },
+      {
+        "repo": "Netflix/metaflow",
+        "title": "[BUG] Card server crashes with RuntimeError when run has 20+ cards",
+        "url": "https://github.com/Netflix/metaflow/issues/2946",
+        "date": "2026-03-02T03:22:38Z"
+      },
+      {
+        "repo": "fury-gl/fury",
+        "title": "[BUG] load_image() returns wrong shape for 16-bit grayscale PNG",
+        "url": "https://github.com/fury-gl/fury/issues/1140",
+        "date": "2026-03-02T01:09:38Z"
+      },
+      {
+        "repo": "Prasham-Parekh/Book-Library-Website",
+        "title": "Fix potential memory leaks",
+        "url": "https://github.com/Prasham-Parekh/Book-Library-Website/issues/9",
+        "date": "2024-07-29T21:15:14Z"
+      },
+      {
+        "repo": "Prasham-Parekh/Book-Library-Website",
+        "title": "Use environment variables for sensitive information",
+        "url": "https://github.com/Prasham-Parekh/Book-Library-Website/issues/8",
+        "date": "2024-07-29T21:14:51Z"
+      },
+      {
+        "repo": "Prasham-Parekh/Book-Library-Website",
+        "title": "Implement proper error handling",
+        "url": "https://github.com/Prasham-Parekh/Book-Library-Website/issues/7",
+        "date": "2024-07-29T21:13:35Z"
+      }
+    ]
+  },
+  "generatedAt": "2026-06-12T01:54:21.672Z"
 }

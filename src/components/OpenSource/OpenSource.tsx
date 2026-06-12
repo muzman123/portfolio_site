@@ -8,7 +8,7 @@ interface OpenSourceProps {
 
 function OpenSource({ onOpenGithub }: OpenSourceProps) {
   return (
-    <Card bgColor="var(--card-purple)" title="Open Source" linkHref="https://github.com/muzman123" className={styles.osCard} delay={0.3} onCardClick={onOpenGithub}>
+    <Card bgColor="var(--card-purple)" title="Github Projects/Open Source since 2025" linkHref="https://github.com/muzman123" className={styles.osCard} delay={0.3} onCardClick={onOpenGithub}>
       <div className={styles.repoList}>
         {contributions.map((c) => (
           <a

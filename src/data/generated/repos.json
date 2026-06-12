@@ -61,46 +61,6 @@
       "pushed_at": "2025-10-29T02:11:30Z"
     },
     {
-      "name": "homekitchen",
-      "description": "",
-      "html_url": "https://github.com/muzman123/homekitchen",
-      "homepage": "",
-      "language": "JavaScript",
-      "topics": [],
-      "stargazers_count": 0,
-      "pushed_at": "2025-04-23T05:46:01Z"
-    },
-    {
-      "name": "HTC_case_comp",
-      "description": "",
-      "html_url": "https://github.com/muzman123/HTC_case_comp",
-      "homepage": "",
-      "language": "Python",
-      "topics": [],
-      "stargazers_count": 0,
-      "pushed_at": "2025-03-02T00:02:50Z"
-    },
-    {
-      "name": "Calgary-Hacks-2025",
-      "description": "Lorax AI training repository",
-      "html_url": "https://github.com/muzman123/Calgary-Hacks-2025",
-      "homepage": "https://github.com/muzman123/forest-guardian-dashboard",
-      "language": "Python",
-      "topics": [],
-      "stargazers_count": 0,
-      "pushed_at": "2025-02-16T18:13:06Z"
-    },
-    {
-      "name": "intern_application_tracker",
-      "description": "",
-      "html_url": "https://github.com/muzman123/intern_application_tracker",
-      "homepage": "",
-      "language": "Python",
-      "topics": [],
-      "stargazers_count": 0,
-      "pushed_at": "2024-11-17T07:31:10Z"
-    },
-    {
       "name": "globenews",
       "description": "",
       "html_url": "https://github.com/muzman123/globenews",
@@ -109,36 +69,6 @@
       "topics": [],
       "stargazers_count": 0,
       "pushed_at": "2024-11-15T02:43:41Z"
-    },
-    {
-      "name": "code_the_change_hackathon",
-      "description": "",
-      "html_url": "https://github.com/muzman123/code_the_change_hackathon",
-      "homepage": "",
-      "language": "TypeScript",
-      "topics": [],
-      "stargazers_count": 0,
-      "pushed_at": "2024-11-12T02:50:50Z"
-    },
-    {
-      "name": "open_ai_hackathon",
-      "description": "",
-      "html_url": "https://github.com/muzman123/open_ai_hackathon",
-      "homepage": "https://open-ai-hackathon.vercel.app/",
-      "language": "TypeScript",
-      "topics": [],
-      "stargazers_count": 0,
-      "pushed_at": "2024-11-01T03:11:09Z"
-    },
-    {
-      "name": "solar_system_threejs",
-      "description": "",
-      "html_url": "https://github.com/muzman123/solar_system_threejs",
-      "homepage": "",
-      "language": "HTML",
-      "topics": [],
-      "stargazers_count": 0,
-      "pushed_at": "2024-05-20T06:08:45Z"
     },
     {
       "name": "last_stop_unity3D",
@@ -151,5 +81,5 @@
       "pushed_at": "2024-04-29T04:56:08Z"
     }
   ],
-  "generatedAt": "2026-06-12T00:59:07.899Z"
+  "generatedAt": "2026-06-12T01:54:19.476Z"
 }

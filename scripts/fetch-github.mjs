@@ -76,37 +76,49 @@ async function fetchRepos() {
   return selected
 }
 
-// ----- Open Source: all-time merged PRs to other people's repos ------------
-async function fetchOpenSource() {
-  const q = encodeURIComponent(`author:${USER} type:pr is:merged`)
+// Run a GitHub search query, following pagination up to ~1000 results.
+async function searchAll(query) {
+  const q = encodeURIComponent(query)
   let page = 1
-  const allItems = []
-  // Search API caps at 1000 results; a handful of pages is plenty here.
+  const items = []
   while (page <= 10) {
     const data = await gh(
       `/search/issues?q=${q}&per_page=100&page=${page}&sort=created&order=desc`
     )
-    allItems.push(...data.items)
-    if (data.items.length < 100) break
+    items.push(...(data.items || []))
+    if (!data.items || data.items.length < 100) break
     page++
   }
+  return items
+}
 
-  // Group external (non-own) repos and count merged PRs.
+// repository_url -> "owner/repo"
+const repoFullName = (url) => {
+  const m = url.match(/repos\/([^/]+)\/([^/]+)$/)
+  return m ? `${m[1]}/${m[2]}` : ''
+}
+
+// ----- Open Source: all-time contributions + activity feed -----------------
+async function fetchOpenSource() {
+  const [mergedItems, openItems, issueItems] = await Promise.all([
+    searchAll(`author:${USER} type:pr is:merged`),
+    searchAll(`author:${USER} type:pr is:open`),
+    searchAll(`author:${USER} type:issue`),
+  ])
+
+  // ---- Card data: external (non-own) repos with merged PRs, ranked by stars.
   const byRepo = new Map()
-  for (const item of allItems) {
-    // repository_url -> https://api.github.com/repos/{owner}/{repo}
-    const m = item.repository_url.match(/repos\/([^/]+)\/([^/]+)$/)
-    if (!m) continue
-    const [, owner, repo] = m
+  for (const item of mergedItems) {
+    const full = repoFullName(item.repository_url)
+    if (!full) continue
+    const owner = full.split('/')[0]
     if (owner.toLowerCase() === USER.toLowerCase()) continue // skip own repos
-    const key = `${owner}/${repo}`
-    byRepo.set(key, (byRepo.get(key) || 0) + 1)
+    byRepo.set(full, (byRepo.get(full) || 0) + 1)
   }
 
-  const totalMergedPRs = allItems.length
+  const totalMergedPRs = mergedItems.length
   const externalRepoCount = byRepo.size
 
-  // Enrich each external repo with stars + description, then rank by stars.
   const enriched = []
   for (const [full, prCount] of byRepo) {
     try {
@@ -123,17 +135,43 @@ async function fetchOpenSource() {
       console.warn(`  (skipping ${full}: ${e.message})`)
     }
   }
-
   enriched.sort((a, b) => b.starsRaw - a.starsRaw)
   const contributions = enriched.slice(0, 6)
 
+  // ---- Modal data: an all-time activity feed grouped by kind.
+  const toItem = (it, date) => ({
+    repo: repoFullName(it.repository_url),
+    title: it.title,
+    url: it.html_url,
+    date,
+  })
+  const byDateDesc = (a, b) => Date.parse(b.date) - Date.parse(a.date)
+  const cap = 30
+
+  const activity = {
+    mergedPRs: mergedItems
+      .map((it) => toItem(it, it.pull_request?.merged_at || it.closed_at || it.created_at))
+      .sort(byDateDesc)
+      .slice(0, cap),
+    openPRs: openItems
+      .map((it) => toItem(it, it.created_at))
+      .sort(byDateDesc)
+      .slice(0, cap),
+    issues: issueItems
+      .map((it) => toItem(it, it.created_at))
+      .sort(byDateDesc)
+      .slice(0, cap),
+  }
+
   console.log(
-    `  open source: ${totalMergedPRs} merged PRs across ${externalRepoCount} external repos`
+    `  open source: ${totalMergedPRs} merged PRs across ${externalRepoCount} external repos` +
+      ` | activity: ${activity.mergedPRs.length} merged, ${activity.openPRs.length} open, ${activity.issues.length} issues`
   )
 
   return {
     contributions,
     summary: { totalMergedPRs, externalRepoCount },
+    activity,
     generatedAt: new Date().toISOString(),
   }
 }
