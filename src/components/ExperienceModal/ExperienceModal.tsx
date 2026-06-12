@@ -38,7 +38,7 @@ const experiences = [
     dates: 'May 2026 – Present',
     location: 'Calgary',
     description:
-      'Summer Software Engineer Analyst on the technology team. (Update this with your responsibilities and impact.)',
+      'Summer Analyst in the Technology Development Program.',
     tags: ['Software Engineering'],
   },
 ]
