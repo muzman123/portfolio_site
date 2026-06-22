@@ -5,10 +5,10 @@
       "description": "",
       "html_url": "https://github.com/muzman123/selfhost_doctor",
       "homepage": "",
-      "language": "",
+      "language": "Go",
       "topics": [],
       "stargazers_count": 0,
-      "pushed_at": "2026-06-12T02:16:23Z"
+      "pushed_at": "2026-06-22T00:13:57Z"
     },
     {
       "name": "opengl_procedural_terrain_generation",
@@ -91,5 +91,5 @@
       "pushed_at": "2024-04-29T04:56:08Z"
     }
   ],
-  "generatedAt": "2026-06-21T10:06:59.428Z"
+  "generatedAt": "2026-06-22T12:27:57.697Z"
 }
