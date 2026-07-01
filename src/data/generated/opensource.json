@@ -10,15 +10,15 @@
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4249,
-      "stars": "4.2k",
+      "starsRaw": 4254,
+      "stars": "4.3k",
       "desc": "The open-source LLMOps platform: prompt playground, prompt management, LLM evaluation, and LLM observability all in one place.",
       "prCount": 1,
       "url": "https://github.com/Agenta-AI/agenta/pulls?q=author%3Amuzman123"
     },
     {
       "repo": "stacklok/toolhive",
-      "starsRaw": 1919,
+      "starsRaw": 1921,
       "stars": "1.9k",
       "desc": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
       "prCount": 1,
@@ -222,5 +222,5 @@
       }
     ]
   },
-  "generatedAt": "2026-06-30T10:03:08.963Z"
+  "generatedAt": "2026-07-01T10:16:55.796Z"
 }
