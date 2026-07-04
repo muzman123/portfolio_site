@@ -2,15 +2,15 @@
   "contributions": [
     {
       "repo": "wasp-lang/wasp",
-      "starsRaw": 18548,
-      "stars": "18.5k",
+      "starsRaw": 18552,
+      "stars": "18.6k",
       "desc": "The batteries-included full-stack framework for the AI era. Develop JS/TS web apps (React, Node.js, and Prisma) using declarative code that abstracts away complex full-stack features like auth, background jobs, RPC, email sending, end-to-end type safety, single-command deployment, and more.",
       "prCount": 1,
       "url": "https://github.com/wasp-lang/wasp/pulls?q=author%3Amuzman123"
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4257,
+      "starsRaw": 4260,
       "stars": "4.3k",
       "desc": "The open-source LLMOps platform: prompt playground, prompt management, LLM evaluation, and LLM observability all in one place.",
       "prCount": 1,
@@ -18,7 +18,7 @@
     },
     {
       "repo": "stacklok/toolhive",
-      "starsRaw": 1924,
+      "starsRaw": 1925,
       "stars": "1.9k",
       "desc": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
       "prCount": 1,
@@ -222,5 +222,5 @@
       }
     ]
   },
-  "generatedAt": "2026-07-03T09:36:36.708Z"
+  "generatedAt": "2026-07-04T09:02:24.242Z"
 }
