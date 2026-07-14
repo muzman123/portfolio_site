@@ -2,7 +2,7 @@
   "contributions": [
     {
       "repo": "wasp-lang/wasp",
-      "starsRaw": 18576,
+      "starsRaw": 18578,
       "stars": "18.6k",
       "desc": "The batteries-included full-stack framework for the AI era. Develop JS/TS web apps (React, Node.js, and Prisma) using declarative code that abstracts away complex full-stack features like auth, background jobs, RPC, email sending, end-to-end type safety, single-command deployment, and more.",
       "prCount": 1,
@@ -10,7 +10,7 @@
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4286,
+      "starsRaw": 4290,
       "stars": "4.3k",
       "desc": "The open-source LLMOps platform: prompt playground, prompt management, LLM evaluation, and LLM observability all in one place.",
       "prCount": 1,
@@ -18,7 +18,7 @@
     },
     {
       "repo": "stacklok/toolhive",
-      "starsRaw": 1940,
+      "starsRaw": 1942,
       "stars": "1.9k",
       "desc": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
       "prCount": 1,
@@ -26,8 +26,8 @@
     },
     {
       "repo": "filiptrivan/spiderly",
-      "starsRaw": 60,
-      "stars": "60",
+      "starsRaw": 61,
+      "stars": "61",
       "desc": ".NET (C#) Web App Framework Built For AI Coding Agents",
       "prCount": 1,
       "url": "https://github.com/filiptrivan/spiderly/pulls?q=author%3Amuzman123"
@@ -222,5 +222,5 @@
       }
     ]
   },
-  "generatedAt": "2026-07-13T09:48:48.939Z"
+  "generatedAt": "2026-07-14T08:29:12.567Z"
 }
