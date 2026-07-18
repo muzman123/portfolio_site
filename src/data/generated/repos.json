@@ -5,10 +5,10 @@
       "description": "",
       "html_url": "https://github.com/muzman123/test-repo-governor",
       "homepage": "",
-      "language": "",
+      "language": "HTML",
       "topics": [],
       "stargazers_count": 0,
-      "pushed_at": "2026-07-17T08:19:03Z"
+      "pushed_at": "2026-07-17T21:38:38Z"
     },
     {
       "name": "Governor",
@@ -18,7 +18,7 @@
       "language": "TypeScript",
       "topics": [],
       "stargazers_count": 0,
-      "pushed_at": "2026-07-17T08:06:07Z"
+      "pushed_at": "2026-07-17T11:41:31Z"
     },
     {
       "name": "selfhost_doctor",
@@ -111,5 +111,5 @@
       "pushed_at": "2024-04-29T04:56:08Z"
     }
   ],
-  "generatedAt": "2026-07-17T08:29:50.299Z"
+  "generatedAt": "2026-07-18T08:10:34.206Z"
 }

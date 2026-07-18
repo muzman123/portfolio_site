@@ -2,7 +2,7 @@
   "contributions": [
     {
       "repo": "wasp-lang/wasp",
-      "starsRaw": 18581,
+      "starsRaw": 18584,
       "stars": "18.6k",
       "desc": "The batteries-included full-stack framework for the AI era. Develop JS/TS web apps (React, Node.js, and Prisma) using declarative code that abstracts away complex full-stack features like auth, background jobs, RPC, email sending, end-to-end type safety, single-command deployment, and more.",
       "prCount": 1,
@@ -10,7 +10,7 @@
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4298,
+      "starsRaw": 4300,
       "stars": "4.3k",
       "desc": "The open-source LLMOps platform: prompt playground, prompt management, LLM evaluation, and LLM observability all in one place.",
       "prCount": 1,
@@ -18,8 +18,8 @@
     },
     {
       "repo": "stacklok/toolhive",
-      "starsRaw": 1947,
-      "stars": "1.9k",
+      "starsRaw": 1951,
+      "stars": "2.0k",
       "desc": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
       "prCount": 1,
       "url": "https://github.com/stacklok/toolhive/pulls?q=author%3Amuzman123"
@@ -50,11 +50,23 @@
     }
   ],
   "summary": {
-    "totalMergedPRs": 18,
+    "totalMergedPRs": 20,
     "externalRepoCount": 9
   },
   "activity": {
     "mergedPRs": [
+      {
+        "repo": "muzman123/test-repo-governor",
+        "title": "Governor third test",
+        "url": "https://github.com/muzman123/test-repo-governor/pull/3",
+        "date": "2026-07-17T21:38:38Z"
+      },
+      {
+        "repo": "muzman123/test-repo-governor",
+        "title": "test commit",
+        "url": "https://github.com/muzman123/test-repo-governor/pull/2",
+        "date": "2026-07-17T18:31:02Z"
+      },
       {
         "repo": "stacklok/toolhive",
         "title": "Add request body size limit middleware function",
@@ -164,7 +176,14 @@
         "date": "2023-12-04T14:42:05Z"
       }
     ],
-    "openPRs": [],
+    "openPRs": [
+      {
+        "repo": "muzman123/test-repo-governor",
+        "title": "Test Governor Activity",
+        "url": "https://github.com/muzman123/test-repo-governor/pull/1",
+        "date": "2026-07-17T09:03:24Z"
+      }
+    ],
     "issues": [
       {
         "repo": "google-gemini/gemini-cli",
@@ -222,5 +241,5 @@
       }
     ]
   },
-  "generatedAt": "2026-07-17T08:29:53.831Z"
+  "generatedAt": "2026-07-18T08:10:36.550Z"
 }
