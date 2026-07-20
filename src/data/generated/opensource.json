@@ -10,15 +10,15 @@
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4304,
+      "starsRaw": 4312,
       "stars": "4.3k",
-      "desc": "The open-source LLMOps platform: prompt playground, prompt management, LLM evaluation, and LLM observability all in one place.",
+      "desc": "The open-source workspace for building and running AI agents. Build agents through chat, share them with your team, and run background agents on schedules or app events.",
       "prCount": 1,
       "url": "https://github.com/Agenta-AI/agenta/pulls?q=author%3Amuzman123"
     },
     {
       "repo": "stacklok/toolhive",
-      "starsRaw": 1952,
+      "starsRaw": 1955,
       "stars": "2.0k",
       "desc": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
       "prCount": 1,
@@ -241,5 +241,5 @@
       }
     ]
   },
-  "generatedAt": "2026-07-19T08:34:54.152Z"
+  "generatedAt": "2026-07-20T09:35:13.093Z"
 }
