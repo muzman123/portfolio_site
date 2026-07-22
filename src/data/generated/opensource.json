@@ -10,7 +10,7 @@
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4317,
+      "starsRaw": 4324,
       "stars": "4.3k",
       "desc": "The open-source workspace for building and running AI agents. Build agents through chat, share them with your team, and run background agents on schedules or app events.",
       "prCount": 1,
@@ -18,7 +18,7 @@
     },
     {
       "repo": "stacklok/toolhive",
-      "starsRaw": 1958,
+      "starsRaw": 1960,
       "stars": "2.0k",
       "desc": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
       "prCount": 1,
@@ -178,6 +178,18 @@
     ],
     "openPRs": [
       {
+        "repo": "muzman123/test-repo-governor-demo",
+        "title": "feat: add simple static landing page",
+        "url": "https://github.com/muzman123/test-repo-governor-demo/pull/2",
+        "date": "2026-07-21T23:40:40Z"
+      },
+      {
+        "repo": "muzman123/test-repo-governor-demo",
+        "title": "readme change",
+        "url": "https://github.com/muzman123/test-repo-governor-demo/pull/1",
+        "date": "2026-07-21T23:36:34Z"
+      },
+      {
         "repo": "muzman123/test-repo-governor",
         "title": "Codex/more random goodies",
         "url": "https://github.com/muzman123/test-repo-governor/pull/9",
@@ -277,5 +289,5 @@
       }
     ]
   },
-  "generatedAt": "2026-07-21T08:47:23.944Z"
+  "generatedAt": "2026-07-22T08:46:36.817Z"
 }
