@@ -10,7 +10,7 @@
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4324,
+      "starsRaw": 4326,
       "stars": "4.3k",
       "desc": "The open-source workspace for building and running AI agents. Build agents through chat, share them with your team, and run background agents on schedules or app events.",
       "prCount": 1,
@@ -18,7 +18,7 @@
     },
     {
       "repo": "stacklok/toolhive",
-      "starsRaw": 1960,
+      "starsRaw": 1966,
       "stars": "2.0k",
       "desc": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
       "prCount": 1,
@@ -289,5 +289,5 @@
       }
     ]
   },
-  "generatedAt": "2026-07-22T08:46:36.817Z"
+  "generatedAt": "2026-07-23T08:46:00.682Z"
 }

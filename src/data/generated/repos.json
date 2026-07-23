@@ -6,7 +6,17 @@
       "html_url": "https://github.com/muzman123/Governor",
       "homepage": "https://governor-fawn.vercel.app",
       "language": "TypeScript",
-      "topics": [],
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "codex",
+        "codex-plugin",
+        "cost-tracking",
+        "github-app",
+        "gpt-5-6",
+        "openai-build-week",
+        "usage-monitoring"
+      ],
       "stargazers_count": 0,
       "pushed_at": "2026-07-22T00:59:38Z"
     },
@@ -121,5 +131,5 @@
       "pushed_at": "2024-04-29T04:56:08Z"
     }
   ],
-  "generatedAt": "2026-07-22T08:46:34.087Z"
+  "generatedAt": "2026-07-23T08:45:57.196Z"
 }
