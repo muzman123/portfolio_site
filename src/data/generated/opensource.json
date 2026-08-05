@@ -2,15 +2,15 @@
   "contributions": [
     {
       "repo": "wasp-lang/wasp",
-      "starsRaw": 18649,
-      "stars": "18.6k",
+      "starsRaw": 18653,
+      "stars": "18.7k",
       "desc": "The batteries-included full-stack framework for the AI era. Develop JS/TS web apps (React, Node.js, and Prisma) using declarative code that abstracts away complex full-stack features like auth, background jobs, RPC, email sending, end-to-end type safety, single-command deployment, and more.",
       "prCount": 1,
       "url": "https://github.com/wasp-lang/wasp/pulls?q=author%3Amuzman123"
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4429,
+      "starsRaw": 4435,
       "stars": "4.4k",
       "desc": "Agenta is a workspace where you and your team build agents and automations.",
       "prCount": 1,
@@ -18,7 +18,7 @@
     },
     {
       "repo": "stacklok/toolhive",
-      "starsRaw": 1988,
+      "starsRaw": 1990,
       "stars": "2.0k",
       "desc": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
       "prCount": 1,
@@ -289,5 +289,5 @@
       }
     ]
   },
-  "generatedAt": "2026-08-04T09:10:43.991Z"
+  "generatedAt": "2026-08-05T09:08:07.316Z"
 }
