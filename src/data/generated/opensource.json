@@ -2,7 +2,7 @@
   "contributions": [
     {
       "repo": "wasp-lang/wasp",
-      "starsRaw": 18664,
+      "starsRaw": 18665,
       "stars": "18.7k",
       "desc": "The batteries-included full-stack framework for the AI era. Develop JS/TS web apps (React, Node.js, and Prisma) using declarative code that abstracts away complex full-stack features like auth, background jobs, RPC, email sending, end-to-end type safety, single-command deployment, and more.",
       "prCount": 1,
@@ -10,8 +10,8 @@
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4446,
-      "stars": "4.4k",
+      "starsRaw": 4450,
+      "stars": "4.5k",
       "desc": "Agenta is a workspace where you and your team build agents and automations.",
       "prCount": 1,
       "url": "https://github.com/Agenta-AI/agenta/pulls?q=author%3Amuzman123"
@@ -289,5 +289,5 @@
       }
     ]
   },
-  "generatedAt": "2026-08-08T07:17:36.160Z"
+  "generatedAt": "2026-08-09T07:18:17.472Z"
 }
