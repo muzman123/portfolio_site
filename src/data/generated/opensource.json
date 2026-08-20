@@ -10,7 +10,7 @@
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4489,
+      "starsRaw": 4498,
       "stars": "4.5k",
       "desc": "Agenta is a workspace where you and your team build agents and automations.",
       "prCount": 1,
@@ -18,7 +18,7 @@
     },
     {
       "repo": "stacklok/toolhive",
-      "starsRaw": 2025,
+      "starsRaw": 2026,
       "stars": "2.0k",
       "desc": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
       "prCount": 1,
@@ -289,5 +289,5 @@
       }
     ]
   },
-  "generatedAt": "2026-08-19T07:07:38.678Z"
+  "generatedAt": "2026-08-20T07:08:27.882Z"
 }
