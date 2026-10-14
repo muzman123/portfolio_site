@@ -2,7 +2,7 @@
   "contributions": [
     {
       "repo": "wasp-lang/wasp",
-      "starsRaw": 18767,
+      "starsRaw": 18769,
       "stars": "18.8k",
       "desc": "The batteries-included full-stack framework for the AI era. Develop JS/TS web apps (React, Node.js, and Prisma) using declarative code that abstracts away complex full-stack features like auth, background jobs, RPC, email sending, end-to-end type safety, single-command deployment, and more.",
       "prCount": 1,
@@ -10,7 +10,7 @@
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4829,
+      "starsRaw": 4831,
       "stars": "4.8k",
       "desc": "Agenta is a workspace where you and your team build agents and automations.",
       "prCount": 1,
@@ -18,7 +18,7 @@
     },
     {
       "repo": "stacklok/toolhive",
-      "starsRaw": 2278,
+      "starsRaw": 2283,
       "stars": "2.3k",
       "desc": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
       "prCount": 1,
@@ -178,18 +178,6 @@
     ],
     "openPRs": [
       {
-        "repo": "muzman123/test-repo-governor-demo",
-        "title": "feat: add simple static landing page",
-        "url": "https://github.com/muzman123/test-repo-governor-demo/pull/2",
-        "date": "2026-07-21T23:40:40Z"
-      },
-      {
-        "repo": "muzman123/test-repo-governor-demo",
-        "title": "readme change",
-        "url": "https://github.com/muzman123/test-repo-governor-demo/pull/1",
-        "date": "2026-07-21T23:36:34Z"
-      },
-      {
         "repo": "muzman123/test-repo-governor",
         "title": "Codex/more random goodies",
         "url": "https://github.com/muzman123/test-repo-governor/pull/9",
@@ -289,5 +277,5 @@
       }
     ]
   },
-  "generatedAt": "2026-10-13T14:17:26.293Z"
+  "generatedAt": "2026-10-14T11:59:02.604Z"
 }

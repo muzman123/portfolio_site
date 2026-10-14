@@ -41,16 +41,6 @@
       "pushed_at": "2026-07-22T00:59:38Z"
     },
     {
-      "name": "test-repo-governor-demo",
-      "description": "test",
-      "html_url": "https://github.com/muzman123/test-repo-governor-demo",
-      "homepage": "",
-      "language": "",
-      "topics": [],
-      "stargazers_count": 0,
-      "pushed_at": "2026-07-21T23:40:11Z"
-    },
-    {
       "name": "test-repo-governor",
       "description": "",
       "html_url": "https://github.com/muzman123/test-repo-governor",
@@ -151,5 +141,5 @@
       "pushed_at": "2024-04-29T04:56:08Z"
     }
   ],
-  "generatedAt": "2026-10-13T14:17:20.780Z"
+  "generatedAt": "2026-10-14T11:58:59.648Z"
 }
