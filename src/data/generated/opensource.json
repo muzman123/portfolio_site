@@ -2,7 +2,7 @@
   "contributions": [
     {
       "repo": "wasp-lang/wasp",
-      "starsRaw": 18775,
+      "starsRaw": 18777,
       "stars": "18.8k",
       "desc": "The batteries-included full-stack framework for the AI era. Develop JS/TS web apps (React, Node.js, and Prisma) using declarative code that abstracts away complex full-stack features like auth, background jobs, RPC, email sending, end-to-end type safety, single-command deployment, and more.",
       "prCount": 1,
@@ -10,7 +10,7 @@
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4843,
+      "starsRaw": 4848,
       "stars": "4.8k",
       "desc": "Agenta is a workspace where you and your team build agents and automations.",
       "prCount": 1,
@@ -18,7 +18,7 @@
     },
     {
       "repo": "stacklok/toolhive",
-      "starsRaw": 2296,
+      "starsRaw": 2301,
       "stars": "2.3k",
       "desc": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
       "prCount": 1,
@@ -50,23 +50,11 @@
     }
   ],
   "summary": {
-    "totalMergedPRs": 20,
+    "totalMergedPRs": 16,
     "externalRepoCount": 9
   },
   "activity": {
     "mergedPRs": [
-      {
-        "repo": "muzman123/test-repo-governor",
-        "title": "Governor third test",
-        "url": "https://github.com/muzman123/test-repo-governor/pull/3",
-        "date": "2026-07-17T21:38:38Z"
-      },
-      {
-        "repo": "muzman123/test-repo-governor",
-        "title": "test commit",
-        "url": "https://github.com/muzman123/test-repo-governor/pull/2",
-        "date": "2026-07-17T18:31:02Z"
-      },
       {
         "repo": "stacklok/toolhive",
         "title": "Add request body size limit middleware function",
@@ -114,18 +102,6 @@
         "title": "Vsc587 temperature component",
         "url": "https://github.com/UCSolarCarTeam/Helios-Mercury/pull/91",
         "date": "2025-03-23T22:36:30Z"
-      },
-      {
-        "repo": "muzman123/code_the_change_hackathon",
-        "title": "forms removed, dsahboard added",
-        "url": "https://github.com/muzman123/code_the_change_hackathon/pull/5",
-        "date": "2024-11-12T02:50:51Z"
-      },
-      {
-        "repo": "muzman123/code_the_change_hackathon",
-        "title": "small form made :)",
-        "url": "https://github.com/muzman123/code_the_change_hackathon/pull/3",
-        "date": "2024-11-10T04:32:30Z"
       },
       {
         "repo": "muzman123/open_ai_hackathon",
@@ -176,50 +152,7 @@
         "date": "2023-12-04T14:42:05Z"
       }
     ],
-    "openPRs": [
-      {
-        "repo": "muzman123/test-repo-governor",
-        "title": "Codex/more random goodies",
-        "url": "https://github.com/muzman123/test-repo-governor/pull/9",
-        "date": "2026-07-21T03:31:22Z"
-      },
-      {
-        "repo": "muzman123/test-repo-governor",
-        "title": "Codex/more starter goodies",
-        "url": "https://github.com/muzman123/test-repo-governor/pull/8",
-        "date": "2026-07-21T03:25:37Z"
-      },
-      {
-        "repo": "muzman123/test-repo-governor",
-        "title": "Codex/even more changes",
-        "url": "https://github.com/muzman123/test-repo-governor/pull/7",
-        "date": "2026-07-21T01:42:48Z"
-      },
-      {
-        "repo": "muzman123/test-repo-governor",
-        "title": "Codex/cool boilerplate",
-        "url": "https://github.com/muzman123/test-repo-governor/pull/6",
-        "date": "2026-07-21T01:32:11Z"
-      },
-      {
-        "repo": "muzman123/test-repo-governor",
-        "title": "Codex/even more simple stuff",
-        "url": "https://github.com/muzman123/test-repo-governor/pull/5",
-        "date": "2026-07-21T01:10:42Z"
-      },
-      {
-        "repo": "muzman123/test-repo-governor",
-        "title": "Add more simple pages",
-        "url": "https://github.com/muzman123/test-repo-governor/pull/4",
-        "date": "2026-07-21T01:01:03Z"
-      },
-      {
-        "repo": "muzman123/test-repo-governor",
-        "title": "Test Governor Activity",
-        "url": "https://github.com/muzman123/test-repo-governor/pull/1",
-        "date": "2026-07-17T09:03:24Z"
-      }
-    ],
+    "openPRs": [],
     "issues": [
       {
         "repo": "google-gemini/gemini-cli",
@@ -277,5 +210,5 @@
       }
     ]
   },
-  "generatedAt": "2026-10-19T13:25:40.272Z"
+  "generatedAt": "2026-10-20T11:44:36.636Z"
 }

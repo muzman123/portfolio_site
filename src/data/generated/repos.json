@@ -11,16 +11,6 @@
       "pushed_at": "2026-10-17T11:06:14Z"
     },
     {
-      "name": "neetcode_150",
-      "description": "My NeetCode.io problem submissions",
-      "html_url": "https://github.com/muzman123/neetcode_150",
-      "homepage": "",
-      "language": "Python",
-      "topics": [],
-      "stargazers_count": 0,
-      "pushed_at": "2026-08-04T00:26:36Z"
-    },
-    {
       "name": "Governor",
       "description": "FinOps AI Agent",
       "html_url": "https://github.com/muzman123/Governor",
@@ -41,18 +31,8 @@
       "pushed_at": "2026-07-22T00:59:38Z"
     },
     {
-      "name": "test-repo-governor",
-      "description": "",
-      "html_url": "https://github.com/muzman123/test-repo-governor",
-      "homepage": "",
-      "language": "HTML",
-      "topics": [],
-      "stargazers_count": 0,
-      "pushed_at": "2026-07-21T03:38:36Z"
-    },
-    {
       "name": "selfhost_doctor",
-      "description": "",
+      "description": "A Command Line Auditor for Self Hosting",
       "html_url": "https://github.com/muzman123/selfhost_doctor",
       "homepage": "",
       "language": "Go",
@@ -62,7 +42,7 @@
     },
     {
       "name": "opengl_procedural_terrain_generation",
-      "description": "",
+      "description": "C++ Procedural Generation",
       "html_url": "https://github.com/muzman123/opengl_procedural_terrain_generation",
       "homepage": "",
       "language": "C",
@@ -111,16 +91,6 @@
       "pushed_at": "2025-12-09T03:42:43Z"
     },
     {
-      "name": "double_top_scanner",
-      "description": "",
-      "html_url": "https://github.com/muzman123/double_top_scanner",
-      "homepage": "",
-      "language": "Python",
-      "topics": [],
-      "stargazers_count": 0,
-      "pushed_at": "2025-10-29T02:11:30Z"
-    },
-    {
       "name": "globenews",
       "description": "",
       "html_url": "https://github.com/muzman123/globenews",
@@ -141,5 +111,5 @@
       "pushed_at": "2024-04-29T04:56:08Z"
     }
   ],
-  "generatedAt": "2026-10-19T13:25:36.524Z"
+  "generatedAt": "2026-10-20T11:44:33.491Z"
 }
