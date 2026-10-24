@@ -2,7 +2,7 @@
   "contributions": [
     {
       "repo": "wasp-lang/wasp",
-      "starsRaw": 18781,
+      "starsRaw": 18783,
       "stars": "18.8k",
       "desc": "The batteries-included full-stack framework for the AI era. Develop JS/TS web apps (React, Node.js, and Prisma) using declarative code that abstracts away complex full-stack features like auth, background jobs, RPC, email sending, end-to-end type safety, single-command deployment, and more.",
       "prCount": 1,
@@ -10,7 +10,7 @@
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4853,
+      "starsRaw": 4857,
       "stars": "4.9k",
       "desc": "Agenta is a workspace where you and your team build agents and automations.",
       "prCount": 1,
@@ -18,7 +18,7 @@
     },
     {
       "repo": "stacklok/toolhive",
-      "starsRaw": 2304,
+      "starsRaw": 2305,
       "stars": "2.3k",
       "desc": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
       "prCount": 1,
@@ -210,5 +210,5 @@
       }
     ]
   },
-  "generatedAt": "2026-10-23T11:44:39.520Z"
+  "generatedAt": "2026-10-24T11:08:19.290Z"
 }
