@@ -10,7 +10,7 @@
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4863,
+      "starsRaw": 4868,
       "stars": "4.9k",
       "desc": "Agenta is a workspace where you and your team build agents and automations.",
       "prCount": 1,
@@ -152,7 +152,20 @@
         "date": "2023-12-04T14:42:05Z"
       }
     ],
-    "openPRs": [],
+    "openPRs": [
+      {
+        "repo": "langgenius/dify",
+        "title": "test: ingest workflow agent knowledge snapshots from SQLite",
+        "url": "https://github.com/langgenius/dify/pull/44978",
+        "date": "2026-10-28T12:40:11Z"
+      },
+      {
+        "repo": "google-gemini/gemini-cli",
+        "title": "fix(cli): use default value when env var is set but empty",
+        "url": "https://github.com/google-gemini/gemini-cli/pull/30003",
+        "date": "2026-10-28T10:21:39Z"
+      }
+    ],
     "issues": [
       {
         "repo": "google-gemini/gemini-cli",
@@ -210,5 +223,5 @@
       }
     ]
   },
-  "generatedAt": "2026-10-27T12:19:01.741Z"
+  "generatedAt": "2026-10-28T13:01:23.669Z"
 }
