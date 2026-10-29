@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import Hero from './components/Hero/Hero'
 import StatsCard from './components/StatsCard/StatsCard'
@@ -26,13 +26,29 @@ function App() {
   )
   const [activeModal, setActiveModal] = useState<ActiveModal>(null)
 
+  const spotlightRef = useRef<HTMLDivElement>(null)
+
+  // Move the spotlight with a transform, at most once per frame, so it never triggers a repaint
   useEffect(() => {
+    let frame = 0
+    let x = 0
+    let y = 0
     const handleMouseMove = (e: MouseEvent) => {
-      document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`)
-      document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`)
+      x = e.clientX
+      y = e.clientY
+      if (frame) return
+      frame = requestAnimationFrame(() => {
+        frame = 0
+        if (spotlightRef.current) {
+          spotlightRef.current.style.transform = `translate3d(${x - 240}px, ${y - 240}px, 0)`
+        }
+      })
     }
     window.addEventListener('mousemove', handleMouseMove)
-    return () => window.removeEventListener('mousemove', handleMouseMove)
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove)
+      cancelAnimationFrame(frame)
+    }
   }, [])
 
   useEffect(() => {
@@ -60,6 +76,7 @@ function App() {
           <ProjectsPage key="projects" onBack={navigateToHome} />
         ) : (
           <div key="home" className="bentoWrapper">
+            <div ref={spotlightRef} className="spotlight" />
             <div className="bentoGrid">
               {/* Row 1: Hero + GitHub Stats */}
               <Hero />

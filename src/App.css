@@ -6,19 +6,18 @@
   position: relative;
 }
 
-/* Cursor spotlight effect */
-.bentoWrapper::before {
-  content: '';
+/* Cursor spotlight effect (positioned from App.tsx via transform) */
+.spotlight {
   position: fixed;
-  inset: 0;
-  background: radial-gradient(
-    600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-    rgba(50, 180, 160, 0.06),
-    transparent 40%
-  );
+  top: 0;
+  left: 0;
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle closest-side, rgba(50, 180, 160, 0.06), transparent);
+  transform: translate3d(calc(50vw - 240px), calc(50vh - 240px), 0);
+  will-change: transform;
   pointer-events: none;
   z-index: 0;
-  transition: background 0.15s ease;
 }
 
 .bentoGrid {
