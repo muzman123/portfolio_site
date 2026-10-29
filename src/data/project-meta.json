@@ -2,7 +2,7 @@
   "_comment": "Editable metadata for the dynamic Projects section. Shared by scripts/fetch-github.mjs (build time) and src/data/projects.ts (runtime merge). Projects are ordered newest-first by last-pushed date. BLACKLIST: add a repo name to the 'blacklist' array to stop it ever appearing on the Projects tab (case-insensitive). Keys under 'overrides' are repo names used to keep a curated image/title/tags/link. Add non-GitHub projects (e.g. itch.io games) under 'manual' with a 'date' so they sort into the timeline.",
   "username": "muzman123",
   "defaultImage": "/images/logo.png",
-  "blacklist": ["portfolio_site", "blog", ".github", "muzman123", "solar_system_threejs", "open_ai_hackathon", "code_the_change_hackathon", "intern_application_tracker", "Calgary-Hacks-2025","HTC_case_comp","homekitchen"],
+  "blacklist": ["portfolio_site", "blog", ".github", "muzman123", "solar_system_threejs", "open_ai_hackathon", "code_the_change_hackathon", "intern_application_tracker", "Calgary-Hacks-2025","HTC_case_comp","homekitchen", "Governor", "knowledge_trove"],
   "overrides": {
     "music_cluster_visualization": {
       "title": "Music Cluster Visualization",
