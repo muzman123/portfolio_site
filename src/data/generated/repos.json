@@ -1,36 +1,6 @@
 {
   "repos": [
     {
-      "name": "knowledge_trove",
-      "description": "My AI-tutored learning system: lessons, review cards, and exercises. One commit per daily session.",
-      "html_url": "https://github.com/muzman123/knowledge_trove",
-      "homepage": "",
-      "language": "Python",
-      "topics": [],
-      "stargazers_count": 0,
-      "pushed_at": "2026-10-17T11:06:14Z"
-    },
-    {
-      "name": "Governor",
-      "description": "FinOps AI Agent",
-      "html_url": "https://github.com/muzman123/Governor",
-      "homepage": "https://governor-fawn.vercel.app",
-      "language": "TypeScript",
-      "topics": [
-        "agent-skills",
-        "ai-agents",
-        "codex",
-        "codex-plugin",
-        "cost-tracking",
-        "github-app",
-        "gpt-5-6",
-        "openai-build-week",
-        "usage-monitoring"
-      ],
-      "stargazers_count": 0,
-      "pushed_at": "2026-07-22T00:59:38Z"
-    },
-    {
       "name": "selfhost_doctor",
       "description": "A Command Line Auditor for Self Hosting",
       "html_url": "https://github.com/muzman123/selfhost_doctor",
@@ -111,5 +81,5 @@
       "pushed_at": "2024-04-29T04:56:08Z"
     }
   ],
-  "generatedAt": "2026-10-28T13:01:19.965Z"
+  "generatedAt": "2026-10-29T13:09:08.785Z"
 }

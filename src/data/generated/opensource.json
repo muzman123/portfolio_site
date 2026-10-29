@@ -1,8 +1,16 @@
 {
   "contributions": [
     {
+      "repo": "langgenius/dify",
+      "starsRaw": 159894,
+      "stars": "159.9k",
+      "desc": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+      "prCount": 1,
+      "url": "https://github.com/langgenius/dify/pulls?q=author%3Amuzman123"
+    },
+    {
       "repo": "wasp-lang/wasp",
-      "starsRaw": 18792,
+      "starsRaw": 18794,
       "stars": "18.8k",
       "desc": "The batteries-included full-stack framework for the AI era. Develop JS/TS web apps (React, Node.js, and Prisma) using declarative code that abstracts away complex full-stack features like auth, background jobs, RPC, email sending, end-to-end type safety, single-command deployment, and more.",
       "prCount": 1,
@@ -10,7 +18,7 @@
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4868,
+      "starsRaw": 4869,
       "stars": "4.9k",
       "desc": "Agenta is a workspace where you and your team build agents and automations.",
       "prCount": 1,
@@ -39,22 +47,20 @@
       "desc": "The PSE website",
       "prCount": 1,
       "url": "https://github.com/privacy-ethereum/pse.dev/pulls?q=author%3Amuzman123"
-    },
-    {
-      "repo": "UCSolarCarTeam/Helios-Mercury",
-      "starsRaw": 0,
-      "stars": "0",
-      "desc": "Mercury dashboard code written in QML/C++",
-      "prCount": 3,
-      "url": "https://github.com/UCSolarCarTeam/Helios-Mercury/pulls?q=author%3Amuzman123"
     }
   ],
   "summary": {
-    "totalMergedPRs": 16,
-    "externalRepoCount": 9
+    "totalMergedPRs": 17,
+    "externalRepoCount": 10
   },
   "activity": {
     "mergedPRs": [
+      {
+        "repo": "langgenius/dify",
+        "title": "test: ingest workflow agent knowledge snapshots from SQLite",
+        "url": "https://github.com/langgenius/dify/pull/44978",
+        "date": "2026-10-28T13:42:42Z"
+      },
       {
         "repo": "stacklok/toolhive",
         "title": "Add request body size limit middleware function",
@@ -154,12 +160,6 @@
     ],
     "openPRs": [
       {
-        "repo": "langgenius/dify",
-        "title": "test: ingest workflow agent knowledge snapshots from SQLite",
-        "url": "https://github.com/langgenius/dify/pull/44978",
-        "date": "2026-10-28T12:40:11Z"
-      },
-      {
         "repo": "google-gemini/gemini-cli",
         "title": "fix(cli): use default value when env var is set but empty",
         "url": "https://github.com/google-gemini/gemini-cli/pull/30003",
@@ -223,5 +223,5 @@
       }
     ]
   },
-  "generatedAt": "2026-10-28T13:01:23.669Z"
+  "generatedAt": "2026-10-29T13:09:13.144Z"
 }
