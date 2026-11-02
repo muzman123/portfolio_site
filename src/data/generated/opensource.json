@@ -2,7 +2,7 @@
   "contributions": [
     {
       "repo": "langgenius/dify",
-      "starsRaw": 160154,
+      "starsRaw": 160237,
       "stars": "160.2k",
       "desc": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
       "prCount": 1,
@@ -26,7 +26,7 @@
     },
     {
       "repo": "stacklok/toolhive",
-      "starsRaw": 2316,
+      "starsRaw": 2321,
       "stars": "2.3k",
       "desc": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
       "prCount": 1,
@@ -34,7 +34,7 @@
     },
     {
       "repo": "amd/gaia",
-      "starsRaw": 1602,
+      "starsRaw": 1608,
       "stars": "1.6k",
       "desc": "Build AI agents for your PC",
       "prCount": 1,
@@ -241,5 +241,5 @@
       }
     ]
   },
-  "generatedAt": "2026-11-01T13:30:51.561Z"
+  "generatedAt": "2026-11-02T16:03:44.874Z"
 }
