@@ -2,23 +2,31 @@
   "contributions": [
     {
       "repo": "langgenius/dify",
-      "starsRaw": 160237,
-      "stars": "160.2k",
+      "starsRaw": 160319,
+      "stars": "160.3k",
       "desc": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
       "prCount": 1,
       "url": "https://github.com/langgenius/dify/pulls?q=author%3Amuzman123"
     },
     {
       "repo": "wasp-lang/wasp",
-      "starsRaw": 18794,
+      "starsRaw": 18792,
       "stars": "18.8k",
       "desc": "The batteries-included full-stack framework for the AI era. Develop JS/TS web apps (React, Node.js, and Prisma) using declarative code that abstracts away complex full-stack features like auth, background jobs, RPC, email sending, end-to-end type safety, single-command deployment, and more.",
       "prCount": 1,
       "url": "https://github.com/wasp-lang/wasp/pulls?q=author%3Amuzman123"
     },
     {
+      "repo": "livekit/agents",
+      "starsRaw": 15071,
+      "stars": "15.1k",
+      "desc": "A framework for building realtime voice AI agents 🤖🎙️📹 ",
+      "prCount": 1,
+      "url": "https://github.com/livekit/agents/pulls?q=author%3Amuzman123"
+    },
+    {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4879,
+      "starsRaw": 4888,
       "stars": "4.9k",
       "desc": "Agenta is a workspace where you and your team build agents and automations.",
       "prCount": 1,
@@ -26,7 +34,7 @@
     },
     {
       "repo": "stacklok/toolhive",
-      "starsRaw": 2321,
+      "starsRaw": 2324,
       "stars": "2.3k",
       "desc": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
       "prCount": 1,
@@ -34,27 +42,25 @@
     },
     {
       "repo": "amd/gaia",
-      "starsRaw": 1608,
+      "starsRaw": 1609,
       "stars": "1.6k",
       "desc": "Build AI agents for your PC",
       "prCount": 1,
       "url": "https://github.com/amd/gaia/pulls?q=author%3Amuzman123"
-    },
-    {
-      "repo": "filiptrivan/spiderly",
-      "starsRaw": 60,
-      "stars": "60",
-      "desc": ".NET (C#) Web App Framework Built For AI Coding Agents",
-      "prCount": 1,
-      "url": "https://github.com/filiptrivan/spiderly/pulls?q=author%3Amuzman123"
     }
   ],
   "summary": {
-    "totalMergedPRs": 18,
-    "externalRepoCount": 11
+    "totalMergedPRs": 19,
+    "externalRepoCount": 12
   },
   "activity": {
     "mergedPRs": [
+      {
+        "repo": "livekit/agents",
+        "title": "feat(mistralai): expose reasoning effort on the LLM",
+        "url": "https://github.com/livekit/agents/pull/8285",
+        "date": "2026-11-02T16:30:09Z"
+      },
       {
         "repo": "amd/gaia",
         "title": "fix(docs): add /docs/ prefix to broken amd-gaia.ai links",
@@ -166,12 +172,6 @@
     ],
     "openPRs": [
       {
-        "repo": "livekit/agents",
-        "title": "feat(mistralai): expose reasoning effort on the LLM",
-        "url": "https://github.com/livekit/agents/pull/8285",
-        "date": "2026-10-30T07:17:11Z"
-      },
-      {
         "repo": "google-gemini/gemini-cli",
         "title": "fix(cli): use default value when env var is set but empty",
         "url": "https://github.com/google-gemini/gemini-cli/pull/30003",
@@ -241,5 +241,5 @@
       }
     ]
   },
-  "generatedAt": "2026-11-02T16:03:44.874Z"
+  "generatedAt": "2026-11-03T14:23:21.128Z"
 }
