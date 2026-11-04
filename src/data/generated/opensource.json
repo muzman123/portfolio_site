@@ -2,15 +2,15 @@
   "contributions": [
     {
       "repo": "langgenius/dify",
-      "starsRaw": 160319,
-      "stars": "160.3k",
+      "starsRaw": 160397,
+      "stars": "160.4k",
       "desc": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
       "prCount": 1,
       "url": "https://github.com/langgenius/dify/pulls?q=author%3Amuzman123"
     },
     {
       "repo": "wasp-lang/wasp",
-      "starsRaw": 18792,
+      "starsRaw": 18796,
       "stars": "18.8k",
       "desc": "The batteries-included full-stack framework for the AI era. Develop JS/TS web apps (React, Node.js, and Prisma) using declarative code that abstracts away complex full-stack features like auth, background jobs, RPC, email sending, end-to-end type safety, single-command deployment, and more.",
       "prCount": 1,
@@ -18,7 +18,7 @@
     },
     {
       "repo": "livekit/agents",
-      "starsRaw": 15071,
+      "starsRaw": 15082,
       "stars": "15.1k",
       "desc": "A framework for building realtime voice AI agents 🤖🎙️📹 ",
       "prCount": 1,
@@ -26,7 +26,7 @@
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4888,
+      "starsRaw": 4891,
       "stars": "4.9k",
       "desc": "Agenta is a workspace where you and your team build agents and automations.",
       "prCount": 1,
@@ -42,7 +42,7 @@
     },
     {
       "repo": "amd/gaia",
-      "starsRaw": 1609,
+      "starsRaw": 1611,
       "stars": "1.6k",
       "desc": "Build AI agents for your PC",
       "prCount": 1,
@@ -241,5 +241,5 @@
       }
     ]
   },
-  "generatedAt": "2026-11-03T14:23:21.128Z"
+  "generatedAt": "2026-11-04T14:38:27.735Z"
 }
