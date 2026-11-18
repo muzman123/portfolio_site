@@ -2,7 +2,7 @@
   "contributions": [
     {
       "repo": "langgenius/dify",
-      "starsRaw": 161361,
+      "starsRaw": 161430,
       "stars": "161.4k",
       "desc": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
       "prCount": 1,
@@ -10,7 +10,7 @@
     },
     {
       "repo": "wasp-lang/wasp",
-      "starsRaw": 18805,
+      "starsRaw": 18809,
       "stars": "18.8k",
       "desc": "The batteries-included full-stack framework for the AI era. Develop JS/TS web apps (React, Node.js, and Prisma) using declarative code that abstracts away complex full-stack features like auth, background jobs, RPC, email sending, end-to-end type safety, single-command deployment, and more.",
       "prCount": 1,
@@ -18,15 +18,15 @@
     },
     {
       "repo": "The-PR-Agent/pr-agent",
-      "starsRaw": 16328,
-      "stars": "16.3k",
+      "starsRaw": 16376,
+      "stars": "16.4k",
       "desc": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
       "prCount": 1,
       "url": "https://github.com/The-PR-Agent/pr-agent/pulls?q=author%3Amuzman123"
     },
     {
       "repo": "livekit/agents",
-      "starsRaw": 15259,
+      "starsRaw": 15274,
       "stars": "15.3k",
       "desc": "A framework for building realtime voice AI agents 🤖🎙️📹 ",
       "prCount": 1,
@@ -34,7 +34,7 @@
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4915,
+      "starsRaw": 4917,
       "stars": "4.9k",
       "desc": "Agenta is a workspace where you and your team build agents and automations.",
       "prCount": 1,
@@ -42,7 +42,7 @@
     },
     {
       "repo": "stacklok/toolhive",
-      "starsRaw": 2342,
+      "starsRaw": 2343,
       "stars": "2.3k",
       "desc": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
       "prCount": 1,
@@ -240,5 +240,5 @@
       }
     ]
   },
-  "generatedAt": "2026-11-17T16:06:27.742Z"
+  "generatedAt": "2026-11-18T15:44:28.104Z"
 }
