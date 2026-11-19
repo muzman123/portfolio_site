@@ -2,15 +2,15 @@
   "contributions": [
     {
       "repo": "langgenius/dify",
-      "starsRaw": 161430,
-      "stars": "161.4k",
+      "starsRaw": 161512,
+      "stars": "161.5k",
       "desc": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
       "prCount": 1,
       "url": "https://github.com/langgenius/dify/pulls?q=author%3Amuzman123"
     },
     {
       "repo": "wasp-lang/wasp",
-      "starsRaw": 18809,
+      "starsRaw": 18811,
       "stars": "18.8k",
       "desc": "The batteries-included full-stack framework for the AI era. Develop JS/TS web apps (React, Node.js, and Prisma) using declarative code that abstracts away complex full-stack features like auth, background jobs, RPC, email sending, end-to-end type safety, single-command deployment, and more.",
       "prCount": 1,
@@ -18,7 +18,7 @@
     },
     {
       "repo": "The-PR-Agent/pr-agent",
-      "starsRaw": 16376,
+      "starsRaw": 16426,
       "stars": "16.4k",
       "desc": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
       "prCount": 1,
@@ -26,7 +26,7 @@
     },
     {
       "repo": "livekit/agents",
-      "starsRaw": 15274,
+      "starsRaw": 15282,
       "stars": "15.3k",
       "desc": "A framework for building realtime voice AI agents 🤖🎙️📹 ",
       "prCount": 1,
@@ -34,7 +34,7 @@
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4917,
+      "starsRaw": 4919,
       "stars": "4.9k",
       "desc": "Agenta is a workspace where you and your team build agents and automations.",
       "prCount": 1,
@@ -240,5 +240,5 @@
       }
     ]
   },
-  "generatedAt": "2026-11-18T15:44:28.104Z"
+  "generatedAt": "2026-11-19T15:49:40.728Z"
 }
