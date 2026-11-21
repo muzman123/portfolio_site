@@ -2,7 +2,7 @@
   "contributions": [
     {
       "repo": "langgenius/dify",
-      "starsRaw": 161566,
+      "starsRaw": 161613,
       "stars": "161.6k",
       "desc": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
       "prCount": 1,
@@ -10,7 +10,7 @@
     },
     {
       "repo": "wasp-lang/wasp",
-      "starsRaw": 18811,
+      "starsRaw": 18813,
       "stars": "18.8k",
       "desc": "The batteries-included full-stack framework for the AI era. Develop JS/TS web apps (React, Node.js, and Prisma) using declarative code that abstracts away complex full-stack features like auth, background jobs, RPC, email sending, end-to-end type safety, single-command deployment, and more.",
       "prCount": 1,
@@ -18,7 +18,7 @@
     },
     {
       "repo": "The-PR-Agent/pr-agent",
-      "starsRaw": 16477,
+      "starsRaw": 16521,
       "stars": "16.5k",
       "desc": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
       "prCount": 1,
@@ -26,7 +26,7 @@
     },
     {
       "repo": "livekit/agents",
-      "starsRaw": 15288,
+      "starsRaw": 15297,
       "stars": "15.3k",
       "desc": "A framework for building realtime voice AI agents 🤖🎙️📹 ",
       "prCount": 1,
@@ -34,7 +34,7 @@
     },
     {
       "repo": "Agenta-AI/agenta",
-      "starsRaw": 4922,
+      "starsRaw": 4925,
       "stars": "4.9k",
       "desc": "Agenta is a workspace where you and your team build agents and automations.",
       "prCount": 1,
@@ -42,7 +42,7 @@
     },
     {
       "repo": "stacklok/toolhive",
-      "starsRaw": 2344,
+      "starsRaw": 2347,
       "stars": "2.3k",
       "desc": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
       "prCount": 1,
@@ -259,5 +259,5 @@
       }
     ]
   },
-  "generatedAt": "2026-11-20T15:31:32.690Z"
+  "generatedAt": "2026-11-21T14:43:13.193Z"
 }
